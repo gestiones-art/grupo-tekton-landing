@@ -9,3 +9,4 @@
 - www CNAME → cname.vercel-dns.com
 ## Correo (Workspace)
 - MX de Google, SPF, DKIM, DMARC (ver guía previa).
+deploy inicial
