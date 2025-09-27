@@ -1,6 +1,6 @@
 // CONFIG: poné tu número de WhatsApp (formato internacional, sin +, ni espacios)
 // Ejemplo: Argentina (11) -> 54911XXXXXXXX
-const WHATSAPP = "54911XXXXXXXX"; // ← REEMPLAZAR
+const WHATSAPP = "5491169988414"; // ← REEMPLAZAR
 
 // CONFIG: pegá acá tu endpoint de Formspree (ej: https://formspree.io/f/abcd1234)
 const FORM_ENDPOINT = "https://formspree.io/f/XXXXXXXX"; // ← REEMPLAZAR
