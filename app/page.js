@@ -1,18 +1,32 @@
+// CONFIG: poné tu número de WhatsApp (formato internacional, sin +, ni espacios)
+// Ejemplo: Argentina (11) -> 54911XXXXXXXX
+const WHATSAPP = "54911XXXXXXXX"; // ← REEMPLAZAR
+
+// CONFIG: pegá acá tu endpoint de Formspree (ej: https://formspree.io/f/abcd1234)
+const FORM_ENDPOINT = "https://formspree.io/f/XXXXXXXX"; // ← REEMPLAZAR
+
 export const metadata = {
-  title: "Grupo Tékton — Gestión Municipal + Six Sigma",
+  title: "Grupo Tékton — Gestión Municipal",
   description:
-    "Gestionamos permisos, demoliciones y regularizaciones para estudios de arquitectura en Zona Norte, con foco en cumplimiento normativo y mejora de procesos.",
+    "Gestión municipal para estudios de arquitectura. Mejora de procesos para minimizar observaciones y optimizar tiempos, con estricto cumplimiento normativo.",
 };
 
 export default function Page() {
+  const waText = encodeURIComponent(
+    "Hola, vengo de estudiotekton.com y necesito ayuda con una gestión municipal."
+  );
+  const waHref = WHATSAPP
+    ? `https://wa.me/${WHATSAPP}?text=${waText}`
+    : `https://wa.me/?text=${waText}`; // fallback si aún no cargaste número
+
   return (
     <main className="min-h-screen bg-white text-gray-900">
-      {/* Hero */}
+      {/* HERO */}
       <section className="mx-auto max-w-7xl px-6 md:px-8 py-14 md:py-24">
         <div className="grid md:grid-cols-2 gap-10 items-start">
           <div>
             <p className="text-sm font-medium text-gray-600">
-              Gestoría Municipal + Six Sigma
+              Gestoría Municipal • Mejora de procesos
             </p>
 
             <h1 className="mt-3 text-4xl md:text-6xl font-black leading-tight tracking-tight">
@@ -21,30 +35,30 @@ export default function Page() {
               estudios de
               <br />
               arquitectura
-              <br />
-              con disciplina <span className="inline-block rounded-lg bg-gray-900 px-3 py-1 text-white">Six</span>
-              <span className="sr-only"> </span>
-              <span className="inline-block rounded-lg bg-gray-900 px-3 py-1 text-white ml-2">Sigma</span>
             </h1>
 
             <p className="mt-6 max-w-2xl text-lg text-gray-700">
-              <strong>Gestionamos</strong> permisos, demoliciones y regularizaciones en Zona Norte.
-              Combinamos conocimiento profundo del COU con mejora de procesos para
-              minimizar observaciones y optimizar tiempos administrativos.
+              <strong>Gestionamos</strong> permisos, demoliciones y regularizaciones en
+              Zona Norte. Enfocamos el trabajo en <strong>mejorar procesos</strong> para
+              minimizar observaciones y <strong>optimizar tiempos administrativos</strong>,
+              siempre con estricto cumplimiento normativo.
             </p>
 
             <div className="mt-8 flex flex-col sm:flex-row gap-3">
               <a
-                href="mailto:sgogroup.info@gmail.com?subject=Consulta%20desde%20estudiotekton.com"
-                className="inline-block rounded-xl bg-gray-900 text-white px-5 py-3 font-medium hover:opacity-90 text-center"
+                href={waHref}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block rounded-xl bg-green-600 text-white px-5 py-3 font-medium hover:opacity-90 text-center"
               >
-                Hablemos hoy
+                WhatsApp
               </a>
+
               <a
-                href="#servicios"
+                href="#contacto"
                 className="inline-block rounded-xl border border-gray-300 px-5 py-3 font-medium hover:bg-gray-50 text-center"
               >
-                Ver servicios
+                Enviar consulta
               </a>
             </div>
 
@@ -53,7 +67,7 @@ export default function Page() {
             </p>
           </div>
 
-          {/* Tarjetas de servicios (lado derecho) */}
+          {/* Tarjetas (servicios) */}
           <div className="grid gap-4" id="servicios">
             <div className="grid sm:grid-cols-2 gap-4">
               <div className="rounded-2xl border p-5">
@@ -78,7 +92,7 @@ export default function Page() {
                 </p>
               </div>
               <div className="rounded-2xl border p-5">
-                <h3 className="font-semibold text-lg">Electromecánica/Ascensor</h3>
+                <h3 className="font-semibold text-lg">Electromecánica / Ascensor</h3>
                 <p className="mt-1 text-sm text-gray-600">
                   Memorias + expedientes específicos
                 </p>
@@ -104,6 +118,63 @@ export default function Page() {
               + FOT/FOS, prefactibilidad, informes técnicos y más.
             </p>
           </div>
+        </div>
+      </section>
+
+      {/* CONTACTO */}
+      <section id="contacto" className="mx-auto max-w-5xl px-6 md:px-8 pb-24">
+        <div className="rounded-2xl border p-6 md:p-8">
+          <h2 className="text-2xl md:text-3xl font-bold">Contacto</h2>
+          <p className="mt-2 text-gray-600">
+            Escribinos y te respondemos a la brevedad. También podés mandar un correo a{" "}
+            <a className="underline" href="mailto:gestiones@estudiotekton.com">
+              gestiones@estudiotekton.com
+            </a>
+            .
+          </p>
+
+          <form
+            className="mt-6 grid md:grid-cols-2 gap-4"
+            action={FORM_ENDPOINT}
+            method="POST"
+          >
+            <input
+              type="hidden"
+              name="_subject"
+              value="Nueva consulta — estudiotekton.com"
+            />
+            <input type="hidden" name="_redirect" value="/gracias" />
+            <input
+              name="nombre"
+              required
+              placeholder="Nombre y estudio"
+              className="rounded-xl border px-4 py-3"
+            />
+            <input
+              name="email"
+              type="email"
+              required
+              placeholder="Email"
+              className="rounded-xl border px-4 py-3"
+            />
+            <input
+              name="telefono"
+              placeholder="Teléfono / WhatsApp"
+              className="rounded-xl border px-4 py-3 md:col-span-2"
+            />
+            <textarea
+              name="mensaje"
+              required
+              rows={4}
+              placeholder="Contanos brevemente qué necesitás"
+              className="rounded-xl border px-4 py-3 md:col-span-2"
+            />
+            {/* anti-spam */}
+            <input type="text" name="_gotcha" className="hidden" tabIndex={-1} autoComplete="off" />
+            <button className="rounded-xl bg-gray-900 text-white px-5 py-3 font-medium hover:opacity-90">
+              Enviar consulta
+            </button>
+          </form>
         </div>
       </section>
     </main>
