@@ -1,15 +1,13 @@
-import './globals.css';
-
+// app/layout.js
 export const metadata = {
-  title: 'Grupo Tékton — Gestoría Municipal + Six Sigma',
-  description:
-    'Permisos, demoliciones y regularizaciones para estudios de arquitectura en Zona Norte. Menos observaciones, más aprobaciones.',
+  title: "Mi Sitio",
+  description: "Descripción de mi sitio",
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="es">
-      <body className="antialiased">{children}</body>
+      <body>{children}</body>
     </html>
   );
 }
