@@ -3,7 +3,7 @@
 const WHATSAPP = "5491169988414"; // ← REEMPLAZAR
 
 // CONFIG: pegá acá tu endpoint de Formspree (ej: https://formspree.io/f/abcd1234)
-const FORM_ENDPOINT = "https://formspree.io/f/XXXXXXXX"; // ← REEMPLAZAR
+const FORM_ENDPOINT = "https://script.google.com/macros/s/AAAAAAAAAAAAAAAAAAAA/exec"; // tu URL
 
 export const metadata = {
   title: "Grupo Tékton — Gestión Municipal",
