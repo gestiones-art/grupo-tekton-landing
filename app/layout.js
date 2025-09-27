@@ -1,3 +1,6 @@
+// ⬅️ IMPORTANTE: esta línea carga Tailwind y tus estilos globales
+import "./globals.css";
+
 export const metadata = {
   title: "Grupo Tékton — Gestión Municipal para Estudios de Arquitectura",
   description:
