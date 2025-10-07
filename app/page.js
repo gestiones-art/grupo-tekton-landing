@@ -116,76 +116,75 @@ export default function Page() {
       </section>
 
       {/* CONTACTO */}
-      <section id="contacto" className="py-8 px-6 md:px-8 mx-auto max-w-4xl">
-        <form
-          action="https://formsubmit.co/gestiones@estudiotekton.com"
-          method="POST"
-          className="space-y-4"
-        >
-          {/* Opcionales útiles */}
-          <input
-            type="hidden"
-            name="_subject"
-            value="Nueva consulta — estudiotekton.com"
-          />
-          <input type="hidden" name="_template" value="table" />
-          <input type="hidden" name="_captcha" value="false" />
-          <input
-            type="hidden"
-            name="_next"
-            value="https://estudiotekton.com/#gracias"
-             <input type="hidden" name="_from" value="Estudio Téktón <gestiones@estudiotekton.com>" />
+     <section id="contacto" className="py-8 px-6 md:px-8 mx-auto max-w-4xl">
+  <form
+    action="https://formsubmit.co/gestiones@estudiotekton.com"
+    method="POST"
+    className="space-y-4"
+  >
+    {/* Opcionales útiles */}
+    <input type="hidden" name="_subject" value="Nueva consulta — estudiotekton.com" />
+    <input type="hidden" name="_template" value="table" />
+    <input type="hidden" name="_captcha" value="false" />
+    <input type="hidden" name="_next" value="https://estudiotekton.com/#gracias" />
 
-          />
-          {/* Auto-respuesta al remitente */}
-          <input
-            type="hidden"
-            name="_autoresponse"
-            value="¡Gracias! Recibimos tu consulta y te responderemos a la brevedad."
-          />
-          {/* Honeypot anti-spam */}
-          <input type="text" name="_honey" style={{ display: "none" }} />
+    {/* Auto-respuesta al remitente (cliente) */}
+    <input
+      type="hidden"
+      name="_autoresponse"
+      value="¡Gracias! Recibimos tu consulta y te responderemos a la brevedad."
+    />
 
-          <div className="grid gap-4 md:grid-cols-2">
-            <input
-              type="text"
-              name="Nombre / Estudio"
-              placeholder="Nombre y estudio"
-              required
-              className="w-full rounded border px-4 py-3"
-            />
-            <input
-              type="email"
-              name="email" // importante llamarlo "email" para el auto-reply
-              placeholder="Email"
-              required
-              className="w-full rounded border px-4 py-3"
-            />
-          </div>
+    {/* Remitente del email que recibís (escapamos < > para JSX) */}
+    <input
+      type="hidden"
+      name="_from"
+      value="Estudio Téktón &lt;gestiones@estudiotekton.com&gt;"
+    />
 
-          <input
-            type="text"
-            name="Teléfono / WhatsApp"
-            placeholder="Teléfono / WhatsApp"
-            className="w-full rounded border px-4 py-3"
-          />
+    {/* Honeypot anti-spam */}
+    <input type="text" name="_honey" style={{ display: "none" }} />
 
-          <textarea
-            name="Mensaje"
-            placeholder="Contanos brevemente qué necesitás"
-            rows={5}
-            required
-            className="w-full rounded border px-4 py-3"
-          />
+    <div className="grid gap-4 md:grid-cols-2">
+      <input
+        type="text"
+        name="Nombre / Estudio"
+        placeholder="Nombre y estudio"
+        required
+        className="w-full rounded border px-4 py-3"
+      />
+      <input
+        type="email"
+        name="email"     /* IMPORTANTE: que se llame "email" para el auto-reply */
+        placeholder="Email"
+        required
+        className="w-full rounded border px-4 py-3"
+      />
+    </div>
 
-          <button
-            type="submit"
-            className="w-full md:w-auto rounded bg-[#0e1524] px-6 py-3 text-white"
-          >
-            Enviar consulta
-          </button>
-        </form>
-      </section>
+    <input
+      type="text"
+      name="Teléfono / WhatsApp"
+      placeholder="Teléfono / WhatsApp"
+      className="w-full rounded border px-4 py-3"
+    />
+
+    <textarea
+      name="Mensaje"
+      placeholder="Contanos brevemente qué necesitás"
+      rows={5}
+      required
+      className="w-full rounded border px-4 py-3"
+    />
+
+    <button
+      type="submit"
+      className="w-full md:w-auto rounded bg-[#0e1524] px-6 py-3 text-white"
+    >
+      Enviar consulta
+    </button>
+  </form>
+</section>
 
       {/* Cartel de Gracias (aparece cuando la URL termina en #gracias) */}
       <div
