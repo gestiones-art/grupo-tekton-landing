@@ -118,69 +118,68 @@ export default function Page() {
       </section>
 
       {/* CONTACTO */}
-      <section id="contacto" className="mx-auto max-w-5xl px-6 md:px-8 pb-24">
-        <div className="rounded-2xl border p-6 md:p-8">
-          <h2 className="text-2xl md:text-3xl font-bold">Contacto</h2>
-          <p className="mt-2 text-gray-600">
-            Escribinos y te respondemos a la brevedad. También podés mandar un correo a{" "}
-            <a className="underline" href="mailto:gestiones@estudiotekton.com">
-              gestiones@estudiotekton.com
-            </a>
-            .
-          </p>
+     <section id="contacto" className="py-8">
+  <form
+    action="https://formsubmit.co/gestiones@estudiotekton.com"
+    method="POST"
+    className="space-y-4"
+  >
+    <div className="grid gap-4 md:grid-cols-2">
+      <input
+        type="text"
+        name="Nombre / Estudio"
+        placeholder="Nombre y estudio"
+        required
+        className="w-full rounded border px-4 py-3"
+      />
+      <input
+        type="email"
+        name="email"               // <- tiene que llamarse así para el auto-reply
+        placeholder="Email"
+        required
+        className="w-full rounded border px-4 py-3"
+      />
+    </div>
 
-        <form
-  action="https://formsubmit.co/gestiones@estudiotekton.com"
-  method="POST"
->
-  <!-- Nombre / Estudio -->
-  <input
-    type="text"
-    name="Nombre / Estudio"
-    placeholder="Nombre y estudio"
-    required
-  />
+    <input
+      type="text"
+      name="Teléfono / WhatsApp"
+      placeholder="Teléfono / WhatsApp"
+      className="w-full rounded border px-4 py-3"
+    />
 
-  <!-- Email (debe llamarse 'email' para que responda al remitente) -->
-  <input
-    type="email"
-    name="email"
-    placeholder="Email"
-    required
-  />
+    <textarea
+      name="Mensaje"
+      placeholder="Contanos brevemente qué necesitás"
+      rows={5}
+      required
+      className="w-full rounded border px-4 py-3"
+    />
 
-  <!-- Teléfono -->
-  <input
-    type="text"
-    name="Teléfono / WhatsApp"
-    placeholder="Teléfono / WhatsApp"
-  />
+    {/* Honeypot anti-spam */}
+    <input type="text" name="_honey" style={{ display: 'none' }} />
 
-  <!-- Mensaje -->
-  <textarea
-    name="Mensaje"
-    placeholder="Contanos brevemente qué necesitás"
-    rows="5"
-    required
-  ></textarea>
+    {/* Opcionales útiles */}
+    <input type="hidden" name="_subject" value="Nueva consulta – Estudio Téktón" />
+    <input type="hidden" name="_template" value="table" />
+    <input type="hidden" name="_captcha" value="false" />
+    <input type="hidden" name="_next" value="https://estudiotekton.com/#gracias" />
 
-  <!-- Anti-spam (honeypot) -->
-  <input type="text" name="_honey" style="display:none">
+    {/* Auto-respuesta que recibe el remitente */}
+    <input
+      type="hidden"
+      name="_autoresponse"
+      value="¡Gracias por escribirnos! Recibimos tu consulta y te responderemos a la brevedad. — Equipo de Estudio Téktón"
+    />
 
-  <!-- Opcionales / útiles -->
-  <input type="hidden" name="_subject"   value="Nueva consulta – Estudio Téktón">
-  <input type="hidden" name="_template"  value="table">                   <!-- email prolijo -->
-  <input type="hidden" name="_captcha"   value="false">                   <!-- sin recaptcha -->
-  <input type="hidden" name="_next"      value="https://estudiotekton.com/#gracias">
-
-  <!-- Auto-respuesta al remitente (texto genérico) -->
-  <input type="hidden" name="_autoresponse"
-         value="¡Gracias por escribirnos! Recibimos tu consulta y te responderemos a la brevedad. — Equipo de Estudio Téktón">
-
-  <button type="submit">Enviar consulta</button>
-</form>
-        </div>
-      </section>
+    <button
+      type="submit"
+      className="w-full md:w-auto rounded bg-[#0e1524] px-6 py-3 text-white"
+    >
+      Enviar consulta
+    </button>
+  </form>
+</section>
     </main>
   );
 }
