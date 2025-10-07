@@ -59,21 +59,26 @@ export default function Page() {
             </p>
 
             <div className="mt-8 flex flex-col sm:flex-row gap-3">
-              <a
-                href={waHref}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-block rounded-xl bg-green-600 text-white px-5 py-3 font-medium hover:opacity-90 text-center"
-              >
-                WhatsApp
-              </a>
+            <a
+  href={waHref}
+  target="_blank"
+  rel="noopener noreferrer"
+  className="inline-flex items-center justify-center gap-2 rounded-xl bg-[#25D366] text-white px-5 py-3 font-medium hover:opacity-90"
+  aria-label="Abrir WhatsApp"
+>
+  {/* Ícono oficial (Simple Icons) */}
+  <svg
+    className="w-[18px] h-[18px]"
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 32 32"
+    fill="currentColor"
+    aria-hidden="true"
+  >
+    <path d="M16.001 3.2c-7.062 0-12.8 5.737-12.8 12.8 0 2.259.589 4.377 1.615 6.22L3.2 28.8l6.78-1.777a12.738 12.738 0 0 0 6.02 1.536h.001c7.062 0 12.799-5.737 12.799-12.8s-5.737-12.8-12.8-12.8zm7.546 17.316c-.33.934-1.627 1.71-2.245 1.735-.599.025-1.365.036-2.202-.14a9.944 9.944 0 0 1-4.35-1.927c-1.93-1.336-3.168-2.98-3.547-3.477-.378-.497-1.362-1.813-1.362-3.462s.86-2.448 1.167-2.783c.307-.335.668-.419.89-.419.221 0 .443 0 .64.012.205.01.48-.077.751.573.27.65.922 2.246 1.003 2.408.082.162.137.353.025.57-.112.216-.169.353-.335.541-.166.189-.352.422-.503.568-.166.162-.339.338-.145.662.194.324.867 1.429 1.862 2.314 1.281 1.12 2.362 1.466 2.686 1.63s.49.135.67-.083c.18-.218.773-.9.98-1.211.205-.31.422-.257.704-.153.282.103 1.79.844 2.099.997.31.153.515.223.59.346.074.123.074.709-.257 1.643z"/>
+  </svg>
+  WhatsApp
+</a>
 
-              <a
-                href="#contacto"
-                className="inline-block rounded-xl border border-gray-300 px-5 py-3 font-medium hover:bg-gray-50 text-center"
-              >
-                Enviar consulta
-              </a>
             </div>
 
             <p className="mt-8 text-sm text-gray-600">
