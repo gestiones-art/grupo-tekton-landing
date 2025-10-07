@@ -32,15 +32,18 @@ export default function Page() {
   <img
     src="/logo-tekton-squad.svg"
     alt="Estudio Tekton"
-    className="h-12 w-12 rounded-xl shadow-sm"   // <— AUMENTÉ de 8 a 12
+    className="h-14 w-14 rounded-xl shadow-sm"  // ↑ de 12 a 14
   />
   <div className="flex items-center gap-2">
-    <span className="text-xl md:text-2xl font-semibold text-gray-800">Estudio Tekton</span>
+    <span className="text-2xl md:text-3xl font-semibold text-gray-800">
+      Estudio Tekton
+    </span>
     <span className="rounded-full bg-gray-100 px-2.5 py-1 text-xs font-medium text-gray-600">
       Gestoría Municipal
     </span>
   </div>
 </div>
+
 
 
 <h1 className="mt-4 text-3xl md:text-5xl font-extrabold leading-[1.1] tracking-tight">
