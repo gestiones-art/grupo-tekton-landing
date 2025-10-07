@@ -10,8 +10,9 @@ html, body { height: 100%; }
 }
 #gracias:target { 
   display: block;
+
+
+}
   /* Gracias: oculto por defecto, visible al entrar con #gracias */
 #gracias { display: none; }
 #gracias:target { display: block; }
-
-}
