@@ -180,12 +180,20 @@ export default function Page() {
       />
     </div>
 
-    <input
-      type="text"
-      name="Teléfono / WhatsApp"
-      placeholder="Teléfono / WhatsApp"
-      className="w-full rounded border px-4 py-3"
-    />
+   <input
+  type="tel"
+  name="Teléfono / WhatsApp"
+  placeholder="Ej: 5491169988414"
+  required
+  inputMode="numeric"
+  autoComplete="tel"
+  minLength={8}
+  maxLength={15}
+  pattern="[0-9]{8,15}"
+  title="Ingresá solo números (8 a 15 dígitos), sin espacios ni guiones."
+  className="w-full rounded border px-4 py-3"
+/>
+
 
     <textarea
       name="Mensaje"
