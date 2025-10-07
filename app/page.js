@@ -42,9 +42,10 @@ export default function Page() {
   </div>
 </div>
 
-<h1 className="mt-3 text-4xl md:text-6xl font-black leading-tight tracking-tight">
+<h1 className="mt-4 text-3xl md:text-5xl font-extrabold leading-[1.1] tracking-tight">
   Gestiones municipales para Obras
 </h1>
+
 
          
 
