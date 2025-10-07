@@ -28,19 +28,20 @@ export default function Page() {
 </p>
 
 {/* Lockup: ícono + nombre + descriptor */}
-<div className="flex items-center gap-3 mb-6">
+<div className="mt-2 flex items-center gap-3">
   <img
     src="/logo-tekton-squad.svg"
-    alt="Estudio Tekton — Gestoría Municipal"
-    className="h-10 w-10 rounded-lg"
+    alt="Estudio Tekton"
+    className="h-12 w-12 rounded-xl shadow-sm"   // <— AUMENTÉ de 8 a 12
   />
-  <div className="flex items-baseline gap-2">
-    <span className="font-semibold text-lg">Estudio Tekton</span>
-    <span className="px-2 py-0.5 rounded-md bg-gray-100 border border-gray-200 text-[10px] md:text-xs">
+  <div className="flex items-center gap-2">
+    <span className="text-xl md:text-2xl font-semibold text-gray-800">Estudio Tekton</span>
+    <span className="rounded-full bg-gray-100 px-2.5 py-1 text-xs font-medium text-gray-600">
       Gestoría Municipal
     </span>
   </div>
 </div>
+
 
 <h1 className="mt-4 text-3xl md:text-5xl font-extrabold leading-[1.1] tracking-tight">
   Gestiones municipales para Obras
