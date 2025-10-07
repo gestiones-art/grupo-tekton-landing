@@ -213,6 +213,25 @@ export default function Page() {
       rows={5}
       required
       className="w-full rounded border px-4 py-3"
+        <div className="space-y-2">
+  <label className="block text-sm text-gray-700">
+    Adjuntar archivos (PDF / DWG / DXF – máx. 10 MB c/u)
+  </label>
+  <input
+    type="file"
+    name="attachment"                // 👈 nombre que reconoce FormSubmit
+    accept=".pdf,.dwg,.dxf,.zip"     // límites en el selector
+    multiple                         // permitir varios
+    className="w-full rounded border px-4 py-3
+               file:mr-4 file:rounded file:border-0
+               file:bg-gray-100 file:px-4 file:py-2"
+  />
+  <p className="text-xs text-gray-500">
+    Si el archivo es muy pesado o tu correo lo bloquea, subilo como .zip
+    o compartí un enlace (Drive/WeTransfer).
+  </p>
+</div>
+
     />
 
     <button
