@@ -1,9 +1,7 @@
-// CONFIG: poné tu número de WhatsApp (formato internacional, sin +, ni espacios)
-// Ejemplo: Argentina (11) -> 54911XXXXXXXX
-const WHATSAPP = "5491169988414"; // ← REEMPLAZAR
+// app/page.js
 
-// CONFIG: pegá acá tu endpoint de Formspree (ej: https://formspree.io/f/abcd1234)
-const FORM_ENDPOINT = "https://script.google.com/macros/s/AAAAAAAAAAAAAAAAAAAA/exec"; // tu URL
+// CONFIG: tu número de WhatsApp (formato internacional, sin + ni espacios)
+const WHATSAPP = "5491169988414"; // ← cambialo si hace falta
 
 export const metadata = {
   title: "Grupo Tékton — Gestión Municipal",
@@ -15,9 +13,7 @@ export default function Page() {
   const waText = encodeURIComponent(
     "Hola, vengo de estudiotekton.com y necesito ayuda con una gestión municipal."
   );
-  const waHref = WHATSAPP
-    ? `https://wa.me/${WHATSAPP}?text=${waText}`
-    : `https://wa.me/?text=${waText}`; // fallback si aún no cargaste número
+  const waHref = `https://wa.me/${WHATSAPP}?text=${waText}`;
 
   return (
     <main className="min-h-screen bg-white text-gray-900">
@@ -30,7 +26,7 @@ export default function Page() {
             </p>
 
             <h1 className="mt-3 text-4xl md:text-6xl font-black leading-tight tracking-tight">
-              Gestiones municipales para Obras 
+              Gestiones municipales para Obras
             </h1>
 
             <p className="mt-6 max-w-2xl text-lg text-gray-700">
@@ -118,77 +114,76 @@ export default function Page() {
       </section>
 
       {/* CONTACTO */}
-     <section id="contacto" className="py-8">
-  <form
-  action="https://formsubmit.co/gestiones@estudiotekton.com"
-  method="POST"
-  className="space-y-4"
->
-  <input type="hidden" name="_subject" value="Nueva consulta — estudiotekton.com" />
-  <input type="hidden" name="_next" value="https://estudiotekton.com/#gracias" />
-  <input type="hidden" name="_captcha" value="false" />
-  <input type="hidden" name="_template" value="table" />
-  <input type="hidden" name="_autoresponse" value="¡Gracias! Recibimos tu consulta y te responderemos a la brevedad." />
-  
-  {/* …tus campos visibles siguen acá… */}
-</form>
+      <section id="contacto" className="mx-auto max-w-4xl px-6 md:px-8 py-16">
+        <h2 className="text-2xl font-bold mb-6">Contacto</h2>
 
-    <div className="grid gap-4 md:grid-cols-2">
-      <input
-        type="text"
-        name="Nombre / Estudio"
-        placeholder="Nombre y estudio"
-        required
-        className="w-full rounded border px-4 py-3"
-      />
-      <input
-        type="email"
-        name="email"               // <- tiene que llamarse así para el auto-reply
-        placeholder="Email"
-        required
-        className="w-full rounded border px-4 py-3"
-      />
-    </div>
+        {/* Un solo formulario, sin duplicados */}
+        <form
+          action="https://formsubmit.co/gestiones@estudiotekton.com"
+          method="POST"
+          className="space-y-4"
+        >
+          {/* Config ocultos */}
+          <input type="hidden" name="_subject" value="Nueva consulta — estudiotekton.com" />
+          <input type="hidden" name="_captcha" value="false" />
+          <input type="hidden" name="_template" value="table" />
+          <input type="hidden" name="_next" value="https://estudiotekton.com/#gracias" />
+          {/* Honeypot anti-spam */}
+          <input type="text" name="_honey" className="hidden" />
 
-    <input
-      type="text"
-      name="Teléfono / WhatsApp"
-      placeholder="Teléfono / WhatsApp"
-      className="w-full rounded border px-4 py-3"
-    />
+          {/* Campos visibles */}
+          <div className="grid gap-4 md:grid-cols-2">
+            <input
+              type="text"
+              name="Nombre / Estudio"
+              placeholder="Nombre y estudio"
+              required
+              className="w-full rounded border px-4 py-3"
+            />
+            <input
+              type="email"
+              name="email" // necesario para que FormSubmit envíe auto-respuesta
+              placeholder="Email"
+              required
+              className="w-full rounded border px-4 py-3"
+            />
+          </div>
 
-    <textarea
-      name="Mensaje"
-      placeholder="Contanos brevemente qué necesitás"
-      rows={5}
-      required
-      className="w-full rounded border px-4 py-3"
-    />
+          <input
+            type="text"
+            name="Teléfono / WhatsApp"
+            placeholder="Teléfono / WhatsApp"
+            className="w-full rounded border px-4 py-3"
+          />
 
-    {/* Honeypot anti-spam */}
-    <input type="text" name="_honey" style={{ display: 'none' }} />
+          <textarea
+            name="Mensaje"
+            placeholder="Contanos brevemente qué necesitás"
+            rows={5}
+            required
+            className="w-full rounded border px-4 py-3"
+          />
 
-    {/* Opcionales útiles */}
-    <input type="hidden" name="_subject" value="Nueva consulta – Estudio Téktón" />
-    <input type="hidden" name="_template" value="table" />
-    <input type="hidden" name="_captcha" value="false" />
-    <input type="hidden" name="_next" value="https://estudiotekton.com/#gracias" />
+          {/* Auto-respuesta al remitente */}
+          <input
+            type="hidden"
+            name="_autoresponse"
+            value="¡Gracias por escribirnos! Recibimos tu consulta y te responderemos a la brevedad. — Equipo de Estudio Téktón"
+          />
 
-    {/* Auto-respuesta que recibe el remitente */}
-    <input
-      type="hidden"
-      name="_autoresponse"
-      value="¡Gracias por escribirnos! Recibimos tu consulta y te responderemos a la brevedad. — Equipo de Estudio Téktón"
-    />
+          <button
+            type="submit"
+            className="w-full md:w-auto rounded bg-[#0e1524] px-6 py-3 text-white"
+          >
+            Enviar consulta
+          </button>
+        </form>
 
-    <button
-      type="submit"
-      className="w-full md:w-auto rounded bg-[#0e1524] px-6 py-3 text-white"
-    >
-      Enviar consulta
-    </button>
-  </form>
-</section>
+        {/* Ancla para la redirección post-envío */}
+        <div id="gracias" className="sr-only">
+          Gracias por tu consulta
+        </div>
+      </section>
     </main>
   );
 }
