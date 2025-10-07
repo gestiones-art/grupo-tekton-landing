@@ -4,3 +4,10 @@
 
 /* Ajustes mínimos */
 html, body { height: 100%; }
+/* Banner de gracias */
+#gracias { 
+  display: none;
+}
+#gracias:target { 
+  display: block;
+}
