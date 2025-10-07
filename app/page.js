@@ -8,7 +8,7 @@ const FORM_ENDPOINT = "https://script.google.com/macros/s/AAAAAAAAAAAAAAAAAAAA/e
 export const metadata = {
   title: "Grupo Tékton — Gestión Municipal",
   description:
-    "Gestión municipal para estudios de arquitectura. Mejora de procesos para minimizar observaciones y optimizar tiempos, con estricto cumplimiento normativo.",
+    "Gestiones municipales de Obras. Mejora de procesos para minimizar observaciones y optimizar tiempos, con estricto cumplimiento normativo.",
 };
 
 export default function Page() {
