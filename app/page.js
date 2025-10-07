@@ -129,48 +129,56 @@ export default function Page() {
             .
           </p>
 
-          <form
-            className="mt-6 grid md:grid-cols-2 gap-4"
-            action={FORM_ENDPOINT}
-            method="POST"
-          >
-            <input
-              type="hidden"
-              name="_subject"
-              value="Nueva consulta — estudiotekton.com"
-            />
-            <input type="hidden" name="_redirect" value="/gracias" />
-            <input
-              name="nombre"
-              required
-              placeholder="Nombre y estudio"
-              className="rounded-xl border px-4 py-3"
-            />
-            <input
-              name="email"
-              type="email"
-              required
-              placeholder="Email"
-              className="rounded-xl border px-4 py-3"
-            />
-            <input
-              name="telefono"
-              placeholder="Teléfono / WhatsApp"
-              className="rounded-xl border px-4 py-3 md:col-span-2"
-            />
-            <textarea
-              name="mensaje"
-              required
-              rows={4}
-              placeholder="Contanos brevemente qué necesitás"
-              className="rounded-xl border px-4 py-3 md:col-span-2"
-            />
-            {/* anti-spam */}
-            <input type="text" name="_gotcha" className="hidden" tabIndex={-1} autoComplete="off" />
-            <button className="rounded-xl bg-gray-900 text-white px-5 py-3 font-medium hover:opacity-90">
-              Enviar consulta
-            </button>
-          </form>
+        <form
+  action="https://formsubmit.co/gestiones@estudiotekton.com"
+  method="POST"
+>
+  <!-- Nombre / Estudio -->
+  <input
+    type="text"
+    name="Nombre / Estudio"
+    placeholder="Nombre y estudio"
+    required
+  />
+
+  <!-- Email (debe llamarse 'email' para que responda al remitente) -->
+  <input
+    type="email"
+    name="email"
+    placeholder="Email"
+    required
+  />
+
+  <!-- Teléfono -->
+  <input
+    type="text"
+    name="Teléfono / WhatsApp"
+    placeholder="Teléfono / WhatsApp"
+  />
+
+  <!-- Mensaje -->
+  <textarea
+    name="Mensaje"
+    placeholder="Contanos brevemente qué necesitás"
+    rows="5"
+    required
+  ></textarea>
+
+  <!-- Anti-spam (honeypot) -->
+  <input type="text" name="_honey" style="display:none">
+
+  <!-- Opcionales / útiles -->
+  <input type="hidden" name="_subject"   value="Nueva consulta – Estudio Téktón">
+  <input type="hidden" name="_template"  value="table">                   <!-- email prolijo -->
+  <input type="hidden" name="_captcha"   value="false">                   <!-- sin recaptcha -->
+  <input type="hidden" name="_next"      value="https://estudiotekton.com/#gracias">
+
+  <!-- Auto-respuesta al remitente (texto genérico) -->
+  <input type="hidden" name="_autoresponse"
+         value="¡Gracias por escribirnos! Recibimos tu consulta y te responderemos a la brevedad. — Equipo de Estudio Téktón">
+
+  <button type="submit">Enviar consulta</button>
+</form>
         </div>
       </section>
     </main>
