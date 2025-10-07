@@ -54,7 +54,7 @@ export default function Page() {
          
 
             <p className="mt-6 max-w-2xl text-lg text-gray-700">
-              <strong>Gestionamos</strong> permisos, demoliciones y regularizaciones en
+              <strong>Gestionamos</strong> permisos de construccion, demoliciones, conforme a obra y regularizaciones en
               Zona Norte. Enfocamos el trabajo en <strong>mejorar procesos</strong> para
               minimizar observaciones y{" "}
               <strong>optimizar tiempos administrativos</strong>, siempre con estricto
