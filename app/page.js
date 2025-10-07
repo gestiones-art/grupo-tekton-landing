@@ -134,6 +134,8 @@ export default function Page() {
             type="hidden"
             name="_next"
             value="https://estudiotekton.com/#gracias"
+             <input type="hidden" name="_from" value="Estudio Téktón <gestiones@estudiotekton.com>" />
+
           />
           {/* Auto-respuesta al remitente */}
           <input
