@@ -120,10 +120,19 @@ export default function Page() {
       {/* CONTACTO */}
      <section id="contacto" className="py-8">
   <form
-    action="https://formsubmit.co/gestiones@estudiotekton.com"
-    method="POST"
-    className="space-y-4"
-  >
+  action="https://formsubmit.co/gestiones@estudiotekton.com"
+  method="POST"
+  className="space-y-4"
+>
+  <input type="hidden" name="_subject" value="Nueva consulta — estudiotekton.com" />
+  <input type="hidden" name="_next" value="https://estudiotekton.com/#gracias" />
+  <input type="hidden" name="_captcha" value="false" />
+  <input type="hidden" name="_template" value="table" />
+  <input type="hidden" name="_autoresponse" value="¡Gracias! Recibimos tu consulta y te responderemos a la brevedad." />
+  
+  {/* …tus campos visibles siguen acá… */}
+</form>
+
     <div className="grid gap-4 md:grid-cols-2">
       <input
         type="text"
