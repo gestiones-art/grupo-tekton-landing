@@ -30,7 +30,7 @@ export default function Page() {
             </p>
 
             <h1 className="mt-3 text-4xl md:text-6xl font-black leading-tight tracking-tight">
-              Gestión municipal 
+              Gestiones municipales para Obras 
             </h1>
 
             <p className="mt-6 max-w-2xl text-lg text-gray-700">
