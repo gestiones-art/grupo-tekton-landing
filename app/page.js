@@ -22,13 +22,31 @@ export default function Page() {
       <section className="mx-auto max-w-7xl px-6 md:px-8 py-14 md:py-24">
         <div className="grid md:grid-cols-2 gap-10 items-start">
           <div>
-            <p className="text-sm font-medium text-gray-600">
-              Gestoría Municipal • Mejora de procesos
-            </p>
+          
+<p className="text-sm font-medium text-gray-600">
+  Gestoría Municipal • Mejora de procesos
+</p>
 
-            <h1 className="mt-3 text-4xl md:text-6xl font-black leading-tight tracking-tight">
-              Gestiones municipales para Obras
-            </h1>
+{/* Lockup: ícono + nombre + descriptor */}
+<div className="flex items-center gap-3 mb-6">
+  <img
+    src="/logo-tekton-squad.svg"
+    alt="Estudio Tekton — Gestoría Municipal"
+    className="h-10 w-10 rounded-lg"
+  />
+  <div className="flex items-baseline gap-2">
+    <span className="font-semibold text-lg">Estudio Tekton</span>
+    <span className="px-2 py-0.5 rounded-md bg-gray-100 border border-gray-200 text-[10px] md:text-xs">
+      Gestoría Municipal
+    </span>
+  </div>
+</div>
+
+<h1 className="mt-3 text-4xl md:text-6xl font-black leading-tight tracking-tight">
+  Gestiones municipales para Obras
+</h1>
+
+         
 
             <p className="mt-6 max-w-2xl text-lg text-gray-700">
               <strong>Gestionamos</strong> permisos, demoliciones y regularizaciones en
