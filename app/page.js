@@ -164,7 +164,7 @@ export default function Page() {
       <input
         type="text"
         name="Nombre / Estudio"
-        placeholder="Nombre y estudio"
+        placeholder="Nombre"
         required
         className="w-full rounded border px-4 py-3"
       />
