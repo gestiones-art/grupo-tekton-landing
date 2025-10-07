@@ -144,36 +144,21 @@ export default function Page() {
       </section>
 
       {/* CONTACTO */}
-     <section id="contacto" className="py-8 px-6 md:px-8 mx-auto max-w-4xl">
-<form
-  action="https://formsubmit.co/gestiones@estudiotekton.com"
-  method="POST"
-  encType="multipart/form-data"   // 👈 importante en React/Next es encType (camelCase)
-  className="space-y-4"
->
-
-    {/* Opcionales útiles */}
+   <section id="contacto" className="py-8 px-6 md:px-8 mx-auto max-w-4xl">
+  <form
+    action="https://formsubmit.co/gestiones@estudiotekton.com"
+    method="POST"
+    encType="multipart/form-data"      // 👈 importante (camelCase en React)
+    className="space-y-4"
+  >
+    {/* Hidden útiles */}
     <input type="hidden" name="_subject" value="Nueva consulta — estudiotekton.com" />
     <input type="hidden" name="_template" value="table" />
     <input type="hidden" name="_captcha" value="false" />
     <input type="hidden" name="_next" value="https://estudiotekton.com/#gracias" />
-
-    {/* Auto-respuesta al remitente (cliente) */}
-    <input
-      type="hidden"
-      name="_autoresponse"
-      value="¡Gracias! Recibimos tu consulta y te responderemos a la brevedad."
-    />
-
-    {/* Remitente del email que recibís (escapamos < > para JSX) */}
-    <input
-      type="hidden"
-      name="_from"
-      value="Estudio Téktón &lt;gestiones@estudiotekton.com&gt;"
-    />
-
+    <input type="hidden" name="_autoresponse" value="¡Gracias! Recibimos tu consulta y te responderemos a la brevedad." />
     {/* Honeypot anti-spam */}
-    <input type="text" name="_honey" style={{ display: "none" }} />
+    <input type="text" name="_honey" style={{ display: 'none' }} />
 
     <div className="grid gap-4 md:grid-cols-2">
       <input
@@ -185,54 +170,60 @@ export default function Page() {
       />
       <input
         type="email"
-        name="email"     /* IMPORTANTE: que se llame "email" para el auto-reply */
+        name="email"                   // importante para el auto-reply
         placeholder="Email"
         required
         className="w-full rounded border px-4 py-3"
       />
     </div>
 
-   <input
-  type="tel"
-  name="Teléfono / WhatsApp"
-  placeholder="Ej: 5491169988414"
-  required
-  inputMode="numeric"
-  autoComplete="tel"
-  minLength={8}
-  maxLength={15}
-  pattern="[0-9]{8,15}"
-  title="Ingresá solo números (8 a 15 dígitos), sin espacios ni guiones."
-  className="w-full rounded border px-4 py-3"
-/>
+    {/* Teléfono con validación (solo números y símbolos comunes) */}
+    <input
+      type="tel"
+      name="Teléfono / WhatsApp"
+      placeholder="Teléfono / WhatsApp"
+      pattern="^[0-9()+\-.\s]{6,20}$"
+      title="Ingresá solo números y símbolos + ( ) - . espacio. Mín. 6, máx. 20 caracteres."
+      className="w-full rounded border px-4 py-3"
+    />
 
-
+    {/* Mensaje (¡cerrado correctamente!) */}
     <textarea
       name="Mensaje"
       placeholder="Contanos brevemente qué necesitás"
       rows={5}
       required
       className="w-full rounded border px-4 py-3"
-        <div className="space-y-2">
-  <label className="block text-sm text-gray-700">
-    Adjuntar archivos (PDF / DWG / DXF – máx. 10 MB c/u)
-  </label>
-  <input
-    type="file"
-    name="attachment"                // 👈 nombre que reconoce FormSubmit
-    accept=".pdf,.dwg,.dxf,.zip"     // límites en el selector
-    multiple                         // permitir varios
-    className="w-full rounded border px-4 py-3
-               file:mr-4 file:rounded file:border-0
-               file:bg-gray-100 file:px-4 file:py-2"
-  />
-  <p className="text-xs text-gray-500">
-    Si el archivo es muy pesado o tu correo lo bloquea, subilo como .zip
-    o compartí un enlace (Drive/WeTransfer).
-  </p>
-</div>
+    ></textarea>
 
+    {/* Adjuntos */}
+    <div className="space-y-2">
+      <label className="block text-sm text-gray-700">
+        Adjuntar archivos (PDF / DWG / DXF / ZIP — máx. 10 MB c/u)
+      </label>
+      <input
+        type="file"
+        name="attachment"               // 👈 nombre que reconoce FormSubmit
+        accept=".pdf,.dwg,.dxf,.zip"
+        multiple
+        className="w-full rounded border px-4 py-3
+                   file:mr-4 file:rounded file:border-0
+                   file:bg-gray-100 file:px-4 file:py-2"
+      />
+      <p className="text-xs text-gray-500">
+        Si el archivo es muy pesado, subilo como .zip o compartí un enlace (Drive/WeTransfer).
+      </p>
+    </div>
+
+    {/* Opcional: enlace a carpeta de archivos */}
+    {/* 
+    <input
+      type="url"
+      name="Enlace a archivos"
+      placeholder="Enlace a carpeta (Drive/WeTransfer)"
+      className="w-full rounded border px-4 py-3"
     />
+    */}
 
     <button
       type="submit"
@@ -242,6 +233,7 @@ export default function Page() {
     </button>
   </form>
 </section>
+
 
       {/* Cartel de Gracias (aparece cuando la URL termina en #gracias) */}
       <div
