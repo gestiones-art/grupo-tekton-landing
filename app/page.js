@@ -179,9 +179,39 @@ export default function Page() {
           </button>
         </form>
 
-        {/* Ancla para la redirección post-envío */}
-        <div id="gracias" className="sr-only">
-          Gracias por tu consulta
+      {/* BANNER DE GRACIAS (se muestra con /#gracias, sin JS) */}
+<div
+  id="gracias"
+  className="hidden fixed left-1/2 -translate-x-1/2 bottom-6 z-50 w-[min(90%,680px)] rounded-xl bg-emerald-600 text-white shadow-lg"
+  role="status"
+  aria-live="polite"
+>
+  <div className="p-4 pr-12">
+    <p className="font-semibold">¡Gracias! Recibimos tu consulta.</p>
+    <p className="text-emerald-100 text-sm">
+      Te responderemos a la brevedad. También podés escribirnos a
+      {" "}
+      <a href="mailto:gestiones@estudiotekton.com" className="underline">
+        gestiones@estudiotekton.com
+      </a>.
+    </p>
+  </div>
+
+  {/* Botón cerrar: limpia el hash para ocultar el banner */}
+  <a
+    href="#"
+    aria-label="Cerrar"
+    className="absolute right-3 top-2 inline-flex h-8 w-8 items-center justify-center rounded-md hover:bg-white/20"
+  >
+    <span className="text-2xl leading-none">×</span>
+  </a>
+</div>
+
+{/* CSS: muestra el banner cuando el hash es #gracias */}
+<style>{`
+  #gracias:target { display: block; }
+`}</style>
+
         </div>
       </section>
     </main>
