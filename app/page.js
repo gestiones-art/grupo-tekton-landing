@@ -145,11 +145,13 @@ export default function Page() {
 
       {/* CONTACTO */}
      <section id="contacto" className="py-8 px-6 md:px-8 mx-auto max-w-4xl">
-  <form
-    action="https://formsubmit.co/gestiones@estudiotekton.com"
-    method="POST"
-    className="space-y-4"
-  >
+<form
+  action="https://formsubmit.co/gestiones@estudiotekton.com"
+  method="POST"
+  encType="multipart/form-data"   // 👈 importante en React/Next es encType (camelCase)
+  className="space-y-4"
+>
+
     {/* Opcionales útiles */}
     <input type="hidden" name="_subject" value="Nueva consulta — estudiotekton.com" />
     <input type="hidden" name="_template" value="table" />
