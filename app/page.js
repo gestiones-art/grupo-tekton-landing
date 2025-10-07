@@ -1,8 +1,9 @@
 // app/page.js
 
-// CONFIG: tu número de WhatsApp (formato internacional, sin + ni espacios)
-const WHATSAPP = "5491169988414"; // ← cambialo si hace falta
+// CONFIG: WhatsApp en formato internacional sin + ni espacios
+const WHATSAPP = "5491169988414";
 
+// (FormSubmit ya no requiere endpoint propio, va directo al email en action)
 export const metadata = {
   title: "Grupo Tékton — Gestión Municipal",
   description:
@@ -32,8 +33,9 @@ export default function Page() {
             <p className="mt-6 max-w-2xl text-lg text-gray-700">
               <strong>Gestionamos</strong> permisos, demoliciones y regularizaciones en
               Zona Norte. Enfocamos el trabajo en <strong>mejorar procesos</strong> para
-              minimizar observaciones y <strong>optimizar tiempos administrativos</strong>,
-              siempre con estricto cumplimiento normativo.
+              minimizar observaciones y{" "}
+              <strong>optimizar tiempos administrativos</strong>, siempre con estricto
+              cumplimiento normativo.
             </p>
 
             <div className="mt-8 flex flex-col sm:flex-row gap-3">
@@ -114,24 +116,34 @@ export default function Page() {
       </section>
 
       {/* CONTACTO */}
-      <section id="contacto" className="mx-auto max-w-4xl px-6 md:px-8 py-16">
-        <h2 className="text-2xl font-bold mb-6">Contacto</h2>
-
-        {/* Un solo formulario, sin duplicados */}
+      <section id="contacto" className="py-8 px-6 md:px-8 mx-auto max-w-4xl">
         <form
           action="https://formsubmit.co/gestiones@estudiotekton.com"
           method="POST"
           className="space-y-4"
         >
-          {/* Config ocultos */}
-          <input type="hidden" name="_subject" value="Nueva consulta — estudiotekton.com" />
-          <input type="hidden" name="_captcha" value="false" />
+          {/* Opcionales útiles */}
+          <input
+            type="hidden"
+            name="_subject"
+            value="Nueva consulta — estudiotekton.com"
+          />
           <input type="hidden" name="_template" value="table" />
-          <input type="hidden" name="_next" value="https://estudiotekton.com/#gracias" />
+          <input type="hidden" name="_captcha" value="false" />
+          <input
+            type="hidden"
+            name="_next"
+            value="https://estudiotekton.com/#gracias"
+          />
+          {/* Auto-respuesta al remitente */}
+          <input
+            type="hidden"
+            name="_autoresponse"
+            value="¡Gracias! Recibimos tu consulta y te responderemos a la brevedad."
+          />
           {/* Honeypot anti-spam */}
-          <input type="text" name="_honey" className="hidden" />
+          <input type="text" name="_honey" style={{ display: "none" }} />
 
-          {/* Campos visibles */}
           <div className="grid gap-4 md:grid-cols-2">
             <input
               type="text"
@@ -142,7 +154,7 @@ export default function Page() {
             />
             <input
               type="email"
-              name="email" // necesario para que FormSubmit envíe auto-respuesta
+              name="email" // importante llamarlo "email" para el auto-reply
               placeholder="Email"
               required
               className="w-full rounded border px-4 py-3"
@@ -164,13 +176,6 @@ export default function Page() {
             className="w-full rounded border px-4 py-3"
           />
 
-          {/* Auto-respuesta al remitente */}
-          <input
-            type="hidden"
-            name="_autoresponse"
-            value="¡Gracias por escribirnos! Recibimos tu consulta y te responderemos a la brevedad. — Equipo de Estudio Téktón"
-          />
-
           <button
             type="submit"
             className="w-full md:w-auto rounded bg-[#0e1524] px-6 py-3 text-white"
@@ -178,42 +183,24 @@ export default function Page() {
             Enviar consulta
           </button>
         </form>
-
-      {/* BANNER DE GRACIAS (se muestra con /#gracias, sin JS) */}
-<div
-  id="gracias"
-  className="hidden fixed left-1/2 -translate-x-1/2 bottom-6 z-50 w-[min(90%,680px)] rounded-xl bg-emerald-600 text-white shadow-lg"
-  role="status"
-  aria-live="polite"
->
-  <div className="p-4 pr-12">
-    <p className="font-semibold">¡Gracias! Recibimos tu consulta.</p>
-    <p className="text-emerald-100 text-sm">
-      Te responderemos a la brevedad. También podés escribirnos a
-      {" "}
-      <a href="mailto:gestiones@estudiotekton.com" className="underline">
-        gestiones@estudiotekton.com
-      </a>.
-    </p>
-  </div>
-
-  {/* Botón cerrar: limpia el hash para ocultar el banner */}
-  <a
-    href="#"
-    aria-label="Cerrar"
-    className="absolute right-3 top-2 inline-flex h-8 w-8 items-center justify-center rounded-md hover:bg-white/20"
-  >
-    <span className="text-2xl leading-none">×</span>
-  </a>
-</div>
-
-{/* CSS: muestra el banner cuando el hash es #gracias */}
-<style>{`
-  #gracias:target { display: block; }
-`}</style>
-
-        </div>
       </section>
+
+      {/* Cartel de Gracias (aparece cuando la URL termina en #gracias) */}
+      <div
+        id="gracias"
+        className="fixed inset-x-0 top-4 mx-auto w-fit rounded-md bg-emerald-600 text-white px-4 py-2 shadow-lg"
+      >
+        ¡Gracias! Recibimos tu consulta.
+      </div>
+      <style jsx>{`
+        #gracias {
+          display: none;
+        }
+        #gracias:target {
+          display: block;
+        }
+      `}</style>
     </main>
   );
 }
+
