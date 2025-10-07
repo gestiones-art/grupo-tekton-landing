@@ -192,14 +192,7 @@ export default function Page() {
       >
         ¡Gracias! Recibimos tu consulta.
       </div>
-      <style jsx>{`
-        #gracias {
-          display: none;
-        }
-        #gracias:target {
-          display: block;
-        }
-      `}</style>
+   
     </main>
   );
 }
