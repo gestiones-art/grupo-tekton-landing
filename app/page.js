@@ -90,8 +90,7 @@ export default function Page() {
 
               <a
                 href="/tramites/demolicion"
-                className="rounded-2xl border p-5 hover:bg-gray-50 transition block"
-              >
+                className="rounded-2xl border bg-white p-5 hover:bg-gray-50 transition block">
                 <h3 className="font-semibold text-lg">Permiso demolición total</h3>
                 <p className="mt-1 text-sm text-gray-600">
                   Planificación + impacto + seguridad
@@ -103,8 +102,8 @@ export default function Page() {
             <div className="grid sm:grid-cols-2 gap-4">
               <a
                 href="/tramites/construccion"
-                className="rounded-2xl border p-5 hover:bg-gray-50 transition block"
-              >
+               className="rounded-2xl border bg-white p-5 hover:bg-gray-50 transition block">
+                 
                 <h3 className="font-semibold text-lg">Permiso de construcción</h3>
                 <p className="mt-1 text-sm text-gray-600">
                   Prefactibilidad FOT/FOS + cómputos
@@ -113,8 +112,8 @@ export default function Page() {
 
               <a
                 href="/tramites/conforme-obra"
-                className="rounded-2xl border p-5 hover:bg-gray-50 transition block"
-              >
+               className="rounded-2xl border bg-white p-5 hover:bg-gray-50 transition block">
+                 
                 <h3 className="font-semibold text-lg">Conforme a obra</h3>
                 <p className="mt-1 text-sm text-gray-600">
                   Levantamientos + visado + archivo
@@ -126,8 +125,8 @@ export default function Page() {
             <div className="grid sm:grid-cols-2 gap-4">
               <a
                 href="/tramites/electromecanica-ascensor"
-                className="rounded-2xl border p-5 hover:bg-gray-50 transition block"
-              >
+              className="rounded-2xl border bg-white p-5 hover:bg-gray-50 transition block">
+                
                 <h3 className="font-semibold text-lg">Electromecánica / Ascensor</h3>
                 <p className="mt-1 text-sm text-gray-600">
                   Memorias + expedientes específicos
@@ -136,8 +135,8 @@ export default function Page() {
 
               <a
                 href="/tramites/subdivision-ph"
-                className="rounded-2xl border p-5 hover:bg-gray-50 transition block"
-              >
+               className="rounded-2xl border bg-white p-5 hover:bg-gray-50 transition block">
+                 
                 <h3 className="font-semibold text-lg">Subdivisión / PH</h3>
                 <p className="mt-1 text-sm text-gray-600">
                   Geodesia + catastro + escrituras
@@ -149,8 +148,8 @@ export default function Page() {
             <div className="grid sm:grid-cols-2 gap-4">
               <a
                 href="/tramites/impacto-ambiental"
-                className="rounded-2xl border p-5 hover:bg-gray-50 transition block"
-              >
+              className="rounded-2xl border bg-white p-5 hover:bg-gray-50 transition block">
+                
                 <h3 className="font-semibold text-lg">Impacto ambiental</h3>
                 <p className="mt-1 text-sm text-gray-600">
                   Gestión integral y seguimiento
