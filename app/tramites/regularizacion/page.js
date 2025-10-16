@@ -4,7 +4,7 @@ import Link from "next/link";
 export const metadata = {
   title: "Regularización de Obra — Grupo Tékton",
   description:
-    "Documentación para regularizar obras existentes ante el municipio: plano conforme, titularidad y requisitos básicos.",
+    "Documentación para regularizar obras existentes ante el municipio",
 };
 
 export default function Page() {
@@ -35,7 +35,7 @@ export default function Page() {
         <p className="text-lg text-gray-700 leading-relaxed">
           En <strong>Grupo Tékton</strong> realizamos el relevamiento y la presentación municipal
           para regularizar construcciones existentes (total o parcial), obtener el{" "}
-          <strong>plano conforme</strong> y dejar la propiedad en regla para escriturar, subdividir
+          <strong>plano </strong> y dejar la propiedad en regla para escriturar, subdividir
           o vender.
         </p>
 
@@ -54,9 +54,9 @@ export default function Page() {
     <li><strong>Certificación parcelaria</strong> vigente emitida por Catastro.</li>
     <li><strong>Libre deuda de ABL</strong> y tasas municipales.</li>
     <li><strong>Fotografías</strong> del estado actual de la propiedad (fachada e interiores).</li>
-    <li><strong>Memoria descriptiva</strong> de lo ejecutado (superficies, materiales e instalaciones).</li>
     <li><strong>Planilla de estadística</strong> y formularios municipales firmados.</li>
     <li><strong>Plano visado por el Colegio Profesional</strong> (CAPBA / CAAITBA), según corresponda.</li>
+    <li><strong>Planilla de revaluos</strong> </li> 
   </ul>
 </div>
 
