@@ -217,17 +217,8 @@ export default function Page() {
             />
           </div>
 
-          {/* Teléfono SIN event handlers (Server Component) */}
-          <input
-            type="tel"
-            inputMode="tel"
-            autoComplete="tel"
-            name="Teléfono / WhatsApp"
-            placeholder="Teléfono / WhatsApp"
-            pattern="^[0-9()+\\-.\\s]{6,20}$"
-            title="Ingresá solo números y símbolos + ( ) - . espacio. Mín. 6, máx. 20 caracteres."
-            className="w-full rounded border px-4 py-3"
-          />
+       <PhoneField />
+
 
           <textarea
             name="Mensaje"
