@@ -5,26 +5,26 @@ export const metadata = {
   description:
     "Documentación requerida para tramitar subdivisiones o propiedades horizontales en Zona Norte.",
 };
-
 export default function TramitePage() {
   return (
     <main className="min-h-screen bg-gray-100 text-gray-900">
       {/* Encabezado oscuro */}
       <section className="bg-[#0b132b] text-white text-center py-20">
         <h1 className="text-4xl font-bold mb-2">
-          Subdivisión / Propiedad Horizontal (PH)
+          Impacto Ambiental
         </h1>
         <p className="text-gray-300">
-          Gestiones técnicas y legales para subdividir inmuebles y preparar escrituras.
+          Evaluación y gestión de requisitos ambientales municipales y provinciales.
         </p>
       </section>
 
       {/* Texto introductorio */}
       <section className="max-w-4xl mx-auto p-6 leading-relaxed">
         <p>
-          En <strong>Grupo Tékton</strong> coordinamos la <strong>subdivisión en PH</strong> y
-          fraccionamientos, integrando el trabajo de mensura, catastro y documentación municipal,
-          para que puedas avanzar con las <strong>escrituras</strong> sin demoras.
+          En <strong>Grupo Tékton</strong> realizamos la <strong>gestión integral de impacto ambiental</strong> para obras
+          y actividades alcanzadas por normativa municipal o provincial. Incluye asesoramiento técnico,
+          preparación de documentación, coordinación con profesionales y seguimiento del expediente
+          hasta su resolución.
         </p>
       </section>
 
@@ -34,32 +34,32 @@ export default function TramitePage() {
           Documentación a presentar
         </h2>
         <p className="text-gray-700 mb-3">
-          Nos ocupamos de reunir, completar y presentar toda la documentación ante los organismos correspondientes.
+          Nos ocupamos de reunir, completar y presentar toda la documentación ante el organismo correspondiente.
         </p>
         <ul className="list-disc pl-6 space-y-1 text-gray-700">
           <li>
-            <strong>Plano en formato DWG</strong> municipal de arquitectura (plantas, cortes, superficies).
+            <strong>Memoria técnica y ambiental</strong> de la obra/actividad (procesos, insumos, efluentes).
           </li>
           <li>
-            <strong>Plano de mensura y subdivisión</strong> (agrimensor), con estado parcelario vigente.
+            <strong>Planos en formato DWG</strong> (ubicación, implantación, arquitectura e instalaciones).
           </li>
           <li>
-            <strong>Escritura inscripta</strong> en el Registro de la Propiedad Inmueble.
+            <strong>Plano de ubicación y accesos</strong> con usos del entorno inmediato.
           </li>
           <li>
-            <strong>Certificación parcelaria</strong> (Catastro) y <strong>libre deuda</strong> de tasas.
+            <strong>Descripción de emisiones, efluentes y residuos</strong> y su forma de tratamiento/gestión.
           </li>
           <li>
-            <strong>Planilla de superficies</strong> por unidad funcional y partes comunes.
+            <strong>Certificaciones y habilitaciones existentes</strong> (si las hubiera).
           </li>
           <li>
-            <strong>Memoria descriptiva</strong> y documentación técnica requerida por el municipio.
+            <strong>Escritura inscripta</strong> y <strong>certificación parcelaria</strong> (Catastro).
           </li>
           <li>
-            <strong>Formulario y expediente municipal</strong> firmados por propietario y profesional.
+            <strong>Formularios y declaraciones juradas</strong> exigidas por el municipio/provincia.
           </li>
           <li>
-            <strong>Plano visado por el Colegio Profesional</strong> (CAPBA / CAAITBA), según corresponda.
+            <strong>Estudios específicos</strong> (ruido, efluentes, suelo/aire) si fueran requeridos por la autoridad.
           </li>
         </ul>
       </section>
@@ -67,10 +67,10 @@ export default function TramitePage() {
       {/* Llamado a la acción */}
       <section className="max-w-3xl mx-auto bg-green-600 text-white rounded-2xl p-6 text-center shadow-md">
         <h3 className="text-lg font-semibold mb-2">
-          ¿Necesitás subdividir en PH?
+          ¿Tu obra o actividad requiere impacto ambiental?
         </h3>
         <p className="text-sm mb-4">
-          Coordinamos mensura, catastro y municipio hasta la documentación final para escriturar.
+          Te asesoramos en requisitos, preparamos la documentación y hacemos el seguimiento del expediente.
         </p>
         <a
           href="https://wa.me/5491169988414"
