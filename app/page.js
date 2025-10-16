@@ -21,10 +21,7 @@ export default function Page() {
       <section className="mx-auto max-w-7xl px-6 md:px-8 py-10 md:py-16">
         <div className="grid md:grid-cols-2 gap-10 items-start">
           <div>
-            {/* Línea chica (SIN 'Gestoría Municipal') */}
-          
-
-            {/* Lockup: logo + nombre (SIN badge a la derecha) */}
+            {/* Lockup: logo + nombre (sin badge) */}
             <div className="mt-2 flex items-center gap-3">
               <img
                 src="/logo-tekton-squad.svg"
@@ -36,7 +33,7 @@ export default function Page() {
               </span>
             </div>
 
-            {/* Título (más moderado) */}
+            {/* Título más moderado */}
             <h1 className="mt-4 text-2xl md:text-4xl font-bold leading-snug text-gray-900">
               Gestiones municipales para obras
             </h1>
@@ -45,8 +42,8 @@ export default function Page() {
               <strong>Gestionamos</strong> permisos de construcción, demoliciones,
               conforme a obra, regularizaciones y subdivisiones en Zona Norte.
               Enfocamos el trabajo en <strong>mejorar procesos</strong> para minimizar
-              observaciones y <strong>optimizar tiempos administrativos</strong>,
-              siempre con estricto cumplimiento normativo.
+              observaciones y <strong>optimizar tiempos administrativos</strong>, siempre
+              con estricto cumplimiento normativo.
             </p>
 
             <div className="mt-8 flex flex-col sm:flex-row gap-3">
@@ -169,29 +166,26 @@ export default function Page() {
 
       {/* CONTACTO */}
       <section id="contacto" className="py-8 px-6 md:px-8 mx-auto max-w-4xl">
+        {/* Aviso: consulta general vs por trámite */}
+        <div className="mb-6 rounded-2xl border bg-white p-5 shadow-sm">
+          <h3 className="text-lg font-semibold text-gray-900 mb-1">
+            ¿Cómo querés hacer tu consulta?
+          </h3>
+          <p className="text-gray-700">
+            Si ya sabés cuál es el trámite que necesitás, <strong>entrá y completá el formulario específico</strong> para adjuntar la documentación y agilizar el análisis.
+            <br /><br />
+            Si no, <strong>dejanos tu consulta acá</strong> y te guiamos. Tené a mano información de la propiedad a consultar:
+            <strong> domicilio completo, plano antecedente o cualquier dato que sea de utilidad.</strong>
+          </p>
+        </div>
 
-      {/* Aviso: consulta general vs por trámite */}
-<div className="mb-6 rounded-2xl border bg-white p-5 shadow-sm">
-  <h3 className="text-lg font-semibold text-gray-900 mb-1">
-  Escribinos, estamos para ayudarte!
-  </h3>
-  <p className="text-gray-700">
-    Si ya sabés cuál es el trámite que necesitás, <strong>entr&#225; y complet&#225; el formulario específico</strong> para adjuntar la documentación y agilizar el análisis.
-    <br />
-    <br />
-    Si no, <strong>dej&#225;nos tu consulta acá</strong> y te guiamos. Tené a mano información de la propiedad a consultar:
-    <strong> domicilio completo, plano antecedente o cualquier dato que sea de utilidad.</strong>
-  </p>
-</div>
-
-
-      
         <form
           action="https://formsubmit.co/gestiones@estudiotekton.com"
           method="POST"
           encType="multipart/form-data"
           className="space-y-4"
         >
+          {/* Hidden útiles */}
           <input type="hidden" name="_subject" value="Nueva consulta — estudiotekton.com" />
           <input type="hidden" name="_template" value="table" />
           <input type="hidden" name="_captcha" value="false" />
@@ -201,6 +195,7 @@ export default function Page() {
             name="_autoresponse"
             value="¡Gracias! Recibimos tu consulta y te responderemos a la brevedad."
           />
+          {/* Honeypot anti-spam */}
           <input type="text" name="_honey" style={{ display: "none" }} />
 
           <div className="grid gap-4 md:grid-cols-2">
@@ -220,19 +215,17 @@ export default function Page() {
             />
           </div>
 
-
-<input
-  type="tel"
-  inputMode="tel"
-  autoComplete="tel"
-  name="Teléfono / WhatsApp"
-  placeholder="Teléfono / WhatsApp"
-  pattern="^[0-9()+\\-.\\s]{6,20}$"
-  title="Ingresá solo números y símbolos + ( ) - . espacio. Mín. 6, máx. 20 caracteres."
-  className="w-full rounded border px-4 py-3"
-/>
-
-
+          {/* Teléfono SIN event handlers (Server Component) */}
+          <input
+            type="tel"
+            inputMode="tel"
+            autoComplete="tel"
+            name="Teléfono / WhatsApp"
+            placeholder="Teléfono / WhatsApp"
+            pattern="^[0-9()+\\-.\\s]{6,20}$"
+            title="Ingresá solo números y símbolos + ( ) - . espacio. Mín. 6, máx. 20 caracteres."
+            className="w-full rounded border px-4 py-3"
+          />
 
           <textarea
             name="Mensaje"
@@ -242,6 +235,7 @@ export default function Page() {
             className="w-full rounded border px-4 py-3"
           ></textarea>
 
+          {/* Adjuntos */}
           <div className="space-y-2">
             <label className="block text-sm text-gray-700">
               Adjuntar archivos (PDF / DWG / DXF / ZIP — máx. 10 MB c/u)
@@ -251,7 +245,9 @@ export default function Page() {
               name="attachment"
               accept=".pdf,.dwg,.dxf,.zip"
               multiple
-              className="w-full rounded border px-4 py-3 file:mr-4 file:rounded file:border-0 file:bg-gray-100 file:px-4 file:py-2"
+              className="w-full rounded border px-4 py-3
+                         file:mr-4 file:rounded file:border-0
+                         file:bg-gray-100 file:px-4 file:py-2"
             />
             <p className="text-xs text-gray-500">
               Si el archivo es muy pesado, subilo como .zip o compartí un enlace (Drive/WeTransfer).
