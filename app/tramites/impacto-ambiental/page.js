@@ -21,7 +21,7 @@ export default function Page() {
         </p>
 
         <h2 className="text-2xl font-semibold text-gray-800 mb-3">
-          Documentación que debe presentar el propietario:
+          Documentación a presentar:
         </h2>
         <ul className="list-disc pl-6 space-y-2 text-gray-700">
           <li>
