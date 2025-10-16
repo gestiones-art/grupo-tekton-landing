@@ -12,19 +12,19 @@ export default function TramitePage() {
       {/* Encabezado uniforme */}
       <section className="bg-[#0b132b] text-white text-center py-20">
         <h1 className="text-4xl font-bold mb-2">
-          Permiso de Construcción
+          Conforme a Obra
         </h1>
         <p className="text-gray-300">
-          Presentación de documentación técnica y legal para obras nuevas o ampliaciones.
+          Relevamiento, visado profesional y archivo del plano conforme a obra.
         </p>
       </section>
 
       {/* Introducción */}
       <section className="max-w-4xl mx-auto p-6 leading-relaxed">
         <p>
-          En <strong>Grupo Tékton</strong> asesoramos a propietarios y profesionales en la presentación del
-          <strong> permiso de obra nueva o ampliación</strong>, cumpliendo con la normativa vigente y los requisitos
-          técnicos municipales.
+          En <strong>Grupo Tékton</strong> realizamos el <strong>Conforme a Obra</strong> para dejar
+          regularizada la documentación construida respecto del plano aprobado. Incluye relevamiento en sitio,
+          actualización de planos, visado profesional y <strong>archivo del plano final</strong> ante el municipio.
         </p>
       </section>
 
@@ -37,40 +37,24 @@ export default function TramitePage() {
           Nos ocupamos de reunir, completar y presentar toda la documentación ante el organismo correspondiente.
         </p>
         <ul className="list-disc pl-6 space-y-1 text-gray-700">
-          <li>
-            <strong>Plano en formato DWG</strong> (municipal), firmado por profesional matriculado.
-          </li>
-          <li>
-            <strong>Certificación parcelaria</strong> vigente emitida por Catastro.
-          </li>
-          <li>
-            <strong>Escritura inscripta</strong> en el Registro de la Propiedad Inmueble.
-          </li>
-          <li>
-            <strong>Libre deuda de ABL</strong> y tasas municipales.
-          </li>
-          <li>
-            <strong>Cómputo de superficies</strong> y planilla de estadística.
-          </li>
-          <li>
-            <strong>Memoria descriptiva</strong> de obra, instalaciones y materiales.
-          </li>
-          <li>
-            <strong>Certificado de Prefactibilidad de Servicios</strong> (AySA, Edenor, Metrogas, etc.).
-          </li>
-          <li>
-            <strong>Plano visado por el Colegio Profesional</strong> (CAPBA / CAAITBA), según corresponda.
-          </li>
+          <li><strong>Plano en formato DWG</strong> con el relevamiento final, firmado por profesional matriculado.</li>
+          <li><strong>Relevamiento del inmueble</strong> (mediciones y verificación de superficies).</li>
+          <li><strong>Escritura inscripta</strong> en el Registro de la Propiedad Inmueble.</li>
+          <li><strong>Certificación parcelaria</strong> vigente emitida por Catastro.</li>
+          <li><strong>Libre deuda de ABL</strong> y tasas municipales.</li>
+          <li><strong>Fotografías</strong> del estado actual (fachada e interiores).</li>
+          <li><strong>Memoria descriptiva</strong> con diferencias respecto del plano aprobado, si las hubiera.</li>
+          <li><strong>Plano visado por el Colegio Profesional</strong> (CAPBA / CAAITBA), según corresponda.</li>
         </ul>
       </section>
 
       {/* CTA */}
       <section className="max-w-3xl mx-auto bg-green-600 text-white rounded-2xl p-6 text-center shadow-md">
         <h3 className="text-lg font-semibold mb-2">
-          ¿Necesitás gestionar tu permiso de construcción?
+          ¿Necesitás presentar el Conforme a Obra?
         </h3>
         <p className="text-sm mb-4">
-          Nuestro equipo se encarga de la presentación completa y el seguimiento ante el municipio.
+          Nos ocupamos del relevamiento, el visado y la presentación completa ante el municipio.
         </p>
         <a
           href="https://wa.me/5491169988414"
