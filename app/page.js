@@ -36,7 +36,6 @@ export default function Page() {
                 <span className="text-2xl md:text-3xl font-semibold text-gray-800">
                   Estudio Tekton
                 </span>
-                <span className="rounded-full bg-gray-100 px-2.5 py-1 text-xs font-medium text-gray-600">
 
                   </span>
               </div>
