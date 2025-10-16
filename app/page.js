@@ -22,7 +22,7 @@ export default function Page() {
         <div className="grid md:grid-cols-2 gap-10 items-start">
           <div>
             <p className="text-sm font-medium text-gray-600">
-              Gestoría Municipal • Mejora de procesos
+              Gestoría Municipal 
             </p>
 
             {/* Lockup: ícono + nombre + descriptor */}
