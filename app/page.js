@@ -170,15 +170,17 @@ export default function Page() {
       {/* CONTACTO */}
       <section id="contacto" className="py-8 px-6 md:px-8 mx-auto max-w-4xl">
 
-        {/* Aviso: consulta general vs por trámite */}
+      {/* Aviso: consulta general vs por trámite */}
 <div className="mb-6 rounded-2xl border bg-white p-5 shadow-sm">
   <h3 className="text-lg font-semibold text-gray-900 mb-1">
-    ¿Cómo querés hacer la consulta?
+    ¿Cómo querés hacer tu consulta?
   </h3>
   <p className="text-gray-700">
-    Podés hacer una <strong>consulta general</strong> con el formulario de abajo.  
-    Si ya sabés qué necesitás, entrá al <strong>trámite correspondiente</strong> y completá el formulario específico
-    para adjuntar la documentación y agilizar el análisis.
+    Si ya sabés cuál es el trámite que necesitás, <strong>entr&#225; y complet&#225; el formulario específico</strong> para adjuntar la documentación y agilizar el análisis.
+    <br />
+    <br />
+    Si no, <strong>dej&#225;nos tu consulta acá</strong> y te guiamos. Tené a mano información de la propiedad a consultar:
+    <strong> domicilio completo, plano antecedente o cualquier dato que sea de utilidad.</strong>
   </p>
 </div>
 
