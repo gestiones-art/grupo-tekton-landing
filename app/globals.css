@@ -3,7 +3,10 @@
 @tailwind utilities;
 
 /* Ajustes mínimos */
-html, body { height: 100%; }
+body {
+  background-color: #f8f9fa; /* gris claro elegante */
+}
+
 /* Banner de gracias */
 #gracias { 
   display: none;
