@@ -220,17 +220,17 @@ export default function Page() {
             />
           </div>
 
-       <input
-  type="tel"
+    import PhoneField from "./components/PhoneField"; // ⬅️ arriba del archivo
+
+// ...dentro del <form> reemplazá el input de Teléfono por esto:
+<PhoneField
   name="Teléfono / WhatsApp"
   placeholder="Teléfono / WhatsApp"
   pattern="^[0-9()+\\-.\\s]{6,20}$"
   title="Ingresá solo números y símbolos + ( ) - . espacio. Mín. 6, máx. 20 caracteres."
   className="w-full rounded border px-4 py-3"
-  onInput={(e) => {
-    e.target.value = e.target.value.replace(/[^0-9+()\-.\s]/g, "");
-  }}
 />
+
 
 
           <textarea
