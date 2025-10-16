@@ -80,10 +80,8 @@ export default function Page() {
           <div className="grid gap-4" id="servicios">
             {/* Fila 1 */}
             <div className="grid sm:grid-cols-2 gap-4">
-              <a
-                href="/tramites/regularizacion"
-                className="rounded-2xl border p-5 hover:bg-gray-50 transition block"
-              >
+            <a href="/tramites/regularizacion" className="rounded-2xl border bg-white p-5 hover:bg-gray-50 transition block">
+
                 <h3 className="font-semibold text-lg">Regularización de planos</h3>
                 <p className="mt-1 text-sm text-gray-600">
                   Obras existentes sin permiso o con diferencias.
