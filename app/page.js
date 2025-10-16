@@ -22,8 +22,8 @@ export default function Page() {
         <div className="grid md:grid-cols-2 gap-10 items-start">
           <div>
             <p className="text-sm font-medium text-gray-600">
-              Gestoría Municipal 
-            </p>
+
+    </p>
 
             {/* Lockup: ícono + nombre + descriptor */}
             <div className="mt-2 flex items-center gap-3">
@@ -37,8 +37,8 @@ export default function Page() {
                   Estudio Tekton
                 </span>
                 <span className="rounded-full bg-gray-100 px-2.5 py-1 text-xs font-medium text-gray-600">
-                  Gestoría Municipal
-                </span>
+
+                  </span>
               </div>
             </div>
 
