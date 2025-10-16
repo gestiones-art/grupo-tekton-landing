@@ -178,7 +178,7 @@ export default function Page() {
   <p className="text-gray-700">
     Podés hacer una <strong>consulta general</strong> con el formulario de abajo.  
     Si ya sabés qué necesitás, entrá al <strong>trámite correspondiente</strong> y completá el formulario específico
-    para adjuntar la documentación y agilitar el análisis.
+    para adjuntar la documentación y agilizar el análisis.
   </p>
 </div>
 
