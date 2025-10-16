@@ -9,6 +9,7 @@ export const metadata = {
   description:
     "Gestiones municipales de Obras. Mejora de procesos para minimizar observaciones y optimizar tiempos, con estricto cumplimiento normativo.",
 };
+import Link from "next/link";
 
 export default function Page() {
   const waText = encodeURIComponent(
