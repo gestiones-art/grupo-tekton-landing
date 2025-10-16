@@ -29,26 +29,36 @@ export default function Page() {
             Documentación que debe presentar el propietario:
           </h2>
           <ul className="list-disc pl-6 space-y-2 text-gray-700">
-            <li>Plano en formato municipal (DWG o PDF) firmado por profesional matriculado.</li>
             <li>
-              <strong>Certificación parcelaria</strong> vigente (Catastro,
-              título de propiedad y Libre Deuda).
+              <strong>Plano en formato DWG</strong> (formato municipal) firmado
+              por profesional matriculado.
             </li>
             <li>
-              Copia de la <strong>escritura o boleto de compraventa</strong> que
-              acredite titularidad.
+              <strong>Certificación parcelaria</strong> vigente, emitida por
+              Catastro, con plazo de obra y foliatura completa.
+            </li>
+            <li>
+              <strong>Escritura inscripta en el Registro de la Propiedad
+              Inmueble</strong> que acredite titularidad (no se acepta boleto de
+              compraventa).
+            </li>
+            <li>
+              <strong>Libre deuda de ABL</strong> y tasas municipales.
+            </li>
+            <li>
+              <strong>Planilla de inicio de expediente</strong> y formularios
+              firmados por propietario y profesional interviniente.
             </li>
             <li>
               <strong>Certificado de desratización</strong> actualizado.
             </li>
             <li>
-              <strong>Planilla de inicio de expediente</strong> y formularios
-              completos firmados.
+              <strong>Fotografías</strong> del estado actual del inmueble.
             </li>
-            <li>Fotografías del estado actual del inmueble.</li>
             <li>
               <strong>Memoria descriptiva</strong> de los trabajos de
-              demolición (método, horarios, medidas de seguridad).
+              demolición: método, medidas de seguridad y disposición final de
+              residuos.
             </li>
             <li>
               <strong>Plano visado por el Colegio Profesional</strong>{" "}
