@@ -30,7 +30,7 @@ export default function Page() {
               <img
                 src="/logo-tekton-squad.svg"
                 alt="Estudio Tekton"
-                className="h-18 w-18 rounded-xl shadow-sm"
+                className="h-16 w-16 rounded-xl shadow-sm"
               />
               <div className="flex items-center gap-2">
                 <span className="text-2xl md:text-3xl font-semibold text-gray-800">
