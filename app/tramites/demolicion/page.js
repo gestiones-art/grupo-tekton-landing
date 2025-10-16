@@ -26,7 +26,7 @@ export default function Page() {
 
         <div>
           <h2 className="text-2xl font-semibold text-gray-800 mb-3">
-            Documentación que debe presentar el propietario:
+            Documentación a presentar:
           </h2>
           <ul className="list-disc pl-6 space-y-2 text-gray-700">
             <li>
@@ -35,7 +35,7 @@ export default function Page() {
             </li>
             <li>
               <strong>Certificación parcelaria</strong> vigente, emitida por
-              Catastro, con plazo de obra y foliatura completa.
+              Catastro.
             </li>
             <li>
               <strong>Escritura inscripta en el Registro de la Propiedad
@@ -43,7 +43,7 @@ export default function Page() {
               compraventa).
             </li>
             <li>
-              <strong>Libre deuda de ABL</strong> y tasas municipales.
+              <strong>Libre deuda de ABL</strong>.
             </li>
             <li>
               <strong>Planilla de inicio de expediente</strong> y formularios
