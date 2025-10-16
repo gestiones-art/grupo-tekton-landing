@@ -52,7 +52,7 @@ export default function Page() {
     <li><strong>Plano en formato DWG</strong> relevado (municipal), firmado por profesional matriculado.</li>
     <li><strong>Escritura inscripta</strong> en el Registro de la Propiedad Inmueble.</li>
     <li><strong>Certificación parcelaria</strong> vigente emitida por Catastro.</li>
-    <li><strong>Libre deuda de ABL</strong> y tasas municipales.</li>
+    <li><strong>Libre deuda de ABL</strong> </li>
     <li><strong>Fotografías</strong> del estado actual de la propiedad (fachada e interiores).</li>
     <li><strong>Planilla de estadística</strong> y formularios municipales firmados.</li>
     <li><strong>Plano visado por el Colegio Profesional</strong> (CAPBA / CAAITBA), según corresponda.</li>
