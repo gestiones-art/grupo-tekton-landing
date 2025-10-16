@@ -82,68 +82,9 @@ export default function Page() {
             </p>
           </div>
 
-          {/* Tarjetas (servicios) */}
-          <div className="grid gap-4" id="servicios">
-            <div className="grid sm:grid-cols-2 gap-4">
-              <Link
-                href="/tramites/demolicion"
-                className="rounded-2xl border p-5 hover:bg-gray-50 transition block"
-              >
-                <h3 className="font-semibold text-lg">Permiso demolición total</h3>
-                <p className="mt-1 text-sm text-gray-600">Planificación + impacto + seguridad</p>
-              </Link>
+        {/* Tarjetas (servicios) */}
+<div className="grid gap-4" id="servicios">
 
-              <Link
-                href="/tramites/construccion"
-                className="rounded-2xl border p-5 hover:bg-gray-50 transition block"
-              >
-                <h3 className="font-semibold text-lg">Permiso de construcción</h3>
-                <p className="mt-1 text-sm text-gray-600">Prefactibilidad FOT/FOS + cómputos</p>
-              </Link>
-            </div>
-
-            <div className="grid sm:grid-cols-2 gap-4">
-              <Link
-                href="/tramites/conforme-obra"
-                className="rounded-2xl border p-5 hover:bg-gray-50 transition block"
-              >
-                <h3 className="font-semibold text-lg">Conforme a obra</h3>
-                <p className="mt-1 text-sm text-gray-600">Levantamientos + visado + archivo</p>
-              </Link>
-
-              <Link
-                href="/tramites/electromecanica-ascensor"
-                className="rounded-2xl border p-5 hover:bg-gray-50 transition block"
-              >
-                <h3 className="font-semibold text-lg">Electromecánica / Ascensor</h3>
-                <p className="mt-1 text-sm text-gray-600">Memorias + expedientes específicos</p>
-              </Link>
-            </div>
-
-            <div className="grid sm:grid-cols-2 gap-4">
-              <Link
-                href="/tramites/subdivision-ph"
-                className="rounded-2xl border p-5 hover:bg-gray-50 transition block"
-              >
-                <h3 className="font-semibold text-lg">Subdivisión / PH</h3>
-                <p className="mt-1 text-sm text-gray-600">Geodesia + catastro + escrituras</p>
-              </Link>
-
-              <Link
-                href="/tramites/impacto-ambiental"
-                className="rounded-2xl border p-5 hover:bg-gray-50 transition block"
-              >
-                <h3 className="font-semibold text-lg">Impacto ambiental</h3>
-                <p className="mt-1 text-sm text-gray-600">Gestión integral y seguimiento</p>
-              </Link>
-            </div>
-
-            <p className="text-xs text-gray-500">
-              + FOT/FOS, prefactibilidad, informes técnicos y más.
-            </p>
-          </div>
-        </div>
-      </section>
 
       {/* CONTACTO */}
       <section id="contacto" className="py-8 px-6 md:px-8 mx-auto max-w-4xl">
