@@ -8,77 +8,67 @@ export const metadata = {
     "Documentación requerida para solicitar un permiso de demolición total ante el municipio. Asesoramiento completo para propietarios.",
 };
 
-export default function Page() {
+export default function TramitePage() {
   return (
-    <main className="min-h-screen bg-white text-gray-900 px-6 md:px-8 py-12">
-      <div className="mx-auto max-w-3xl space-y-8">
-        <div>
-          <h1 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
-            Permiso de Demolición Total
-          </h1>
-          <p className="text-lg text-gray-700 leading-relaxed">
-            En <strong>Grupo Tékton</strong> acompañamos al propietario en la
-            preparación y presentación de la documentación necesaria para
-            gestionar el <strong>permiso de demolición total</strong> ante el
-            municipio correspondiente.
-          </p>
-        </div>
-
-        <div>
-          <h2 className="text-2xl font-semibold text-gray-800 mb-3">
-            Documentación a presentar:
-          </h2>
-          <ul className="list-disc pl-6 space-y-2 text-gray-700">
-            <li>
-              <strong>Plano en formato DWG</strong> (formato municipal) firmado
-              por profesional matriculado.
-            </li>
-            <li>
-              <strong>Certificación parcelaria</strong> vigente, emitida por
-              Catastro.
-            </li>
-            <li>
-              <strong>Escritura inscripta en el Registro de la Propiedad
-              Inmueble</strong> que acredite titularidad (no se acepta boleto de
-              compraventa).
-            </li>
-            <li>
-              <strong>Libre deuda de ABL</strong>.
-            </li>
-            <li>
-              <strong>Planilla de inicio de expediente</strong> y formularios
-              firmados por propietario y profesional interviniente.
-            </li>
-            <li>
-              <strong>Certificado de desratización</strong> actualizado.
-            </li>
-            <li>
-              <strong>Fotografías</strong> del estado actual del inmueble.
-            </li>
-            <li>
-              <strong>Memoria descriptiva</strong> de los trabajos de
-              demolición: método, medidas de seguridad y disposición final de
-              residuos.
-            </li>
-            <li>
-              <strong>Plano visado por el Colegio Profesional</strong>{" "}
-              correspondiente (CAPBA / CAAITBA).
-            </li>
-          </ul>
-        </div>
-
-        <p className="text-gray-700 leading-relaxed border-l-4 border-gray-200 pl-4 italic">
-          Una vez reunida la documentación, el municipio verifica su
-          completitud y autoriza la apertura del expediente. Grupo Tékton se
-          encarga de acompañar al propietario en todas las etapas hasta la
-          obtención del permiso final.
+    <main className="min-h-screen bg-gray-100 text-gray-900">
+      {/* Encabezado oscuro */}
+      <section className="bg-[#0b132b] text-white text-center py-20">
+        <h1 className="text-4xl font-bold mb-2">
+          Permiso de Demolición Total
+        </h1>
+        <p className="text-gray-300">
+          Presentación de documentación técnica y legal para demoliciones totales o parciales.
         </p>
+      </section>
 
-        <div className="pt-6">
-          <Link href="/" className="text-[#0e1524] font-medium hover:underline">
-            ← Volver al inicio
-          </Link>
-        </div>
+      {/* Texto introductorio */}
+      <section className="max-w-4xl mx-auto p-6 leading-relaxed">
+        <p>
+          En <strong>Grupo Téktón</strong> asesoramos a propietarios y profesionales en la gestión del 
+          <strong> permiso de demolición total</strong>, cumpliendo con la normativa vigente y los requisitos técnicos municipales.
+        </p>
+      </section>
+
+      {/* Caja de documentación */}
+      <section className="max-w-3xl mx-auto bg-white shadow-md rounded-2xl p-6 border mb-8">
+        <h2 className="text-xl font-semibold mb-4 text-gray-800">
+          Documentación a presentar
+        </h2>
+        <ul className="list-disc pl-6 space-y-1 text-gray-700">
+          <li><strong>Plano en formato DWG</strong> (municipal), firmado por profesional matriculado.</li>
+          <li><strong>Certificación parcelaria</strong> vigente emitida por Catastro.</li>
+          <li><strong>Escritura inscripta</strong> en el Registro de la Propiedad Inmueble.</li>
+          <li><strong>Fotografías</strong> del estado actual de la propiedad.</li>
+          <li><strong>Memoria descriptiva</strong> con detalle de las tareas a realizar y medidas de seguridad.</li>
+          <li><strong>Certificado de desratización</strong> emitido por entidad habilitada.</li>
+          <li><strong>Plano visado por el Colegio Profesional</strong> correspondiente.</li>
+        </ul>
+      </section>
+
+      {/* Llamado a la acción */}
+      <section className="max-w-3xl mx-auto bg-green-600 text-white rounded-2xl p-6 text-center shadow-md">
+        <h3 className="text-lg font-semibold mb-2">
+          ¿Necesitás gestionar tu permiso?
+        </h3>
+        <p className="text-sm mb-4">
+          Nuestro equipo se encarga de la presentación completa y el seguimiento ante el municipio.
+        </p>
+        <a
+          href="https://wa.me/54911XXXXXXXX" // cambiá por tu número de WhatsApp
+          className="bg-white text-green-700 font-semibold px-6 py-2 rounded-full hover:bg-gray-100 transition"
+        >
+          Consultar por WhatsApp
+        </a>
+      </section>
+
+      {/* Botón volver */}
+      <div className="text-center mt-8 mb-16">
+        <a
+          href="/"
+          className="text-gray-600 hover:text-gray-800 text-sm underline"
+        >
+          ← Volver al inicio
+        </a>
       </div>
     </main>
   );
