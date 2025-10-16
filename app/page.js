@@ -2,6 +2,8 @@
 
 // CONFIG: WhatsApp en formato internacional sin + ni espacios
 const WHATSAPP = "5491169988414";
+import PhoneField from "./components/PhoneField";
+
 
 export const metadata = {
   title: "Grupo Tékton — Gestión Municipal",
