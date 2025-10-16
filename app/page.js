@@ -22,7 +22,7 @@ export default function Page() {
         <div className="grid md:grid-cols-2 gap-10 items-start">
           <div>
             {/* Línea chica (SIN 'Gestoría Municipal') */}
-            <p className="text-sm font-medium text-gray-600">Mejora de procesos</p>
+          
 
             {/* Lockup: logo + nombre (SIN badge a la derecha) */}
             <div className="mt-2 flex items-center gap-3">
