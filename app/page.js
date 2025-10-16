@@ -21,28 +21,25 @@ export default function Page() {
       <section className="mx-auto max-w-7xl px-6 md:px-8 py-10 md:py-16">
         <div className="grid md:grid-cols-2 gap-10 items-start">
           <div>
-            <p className="text-sm font-medium text-gray-600">
+            {/* Línea chica (SIN 'Gestoría Municipal') */}
+            <p className="text-sm font-medium text-gray-600">Mejora de procesos</p>
 
-    </p>
-
-            {/* Lockup: ícono + nombre + descriptor */}
+            {/* Lockup: logo + nombre (SIN badge a la derecha) */}
             <div className="mt-2 flex items-center gap-3">
               <img
                 src="/logo-tekton-squad.svg"
                 alt="Estudio Tekton"
                 className="h-16 w-16 rounded-xl shadow-sm"
               />
-              <div className="flex items-center gap-2">
-                <span className="text-2xl md:text-3xl font-semibold text-gray-800">
-                  Estudio Tekton
-         
-              </div>
+              <span className="text-2xl md:text-3xl font-semibold text-gray-800">
+                Estudio Tekton
+              </span>
             </div>
 
-         <h1 className="mt-4 text-2xl md:text-4xl font-bold leading-snug text-gray-900">
-  Gestiones municipales para obras
-</h1>
-
+            {/* Título (más moderado) */}
+            <h1 className="mt-4 text-2xl md:text-4xl font-bold leading-snug text-gray-900">
+              Gestiones municipales para obras
+            </h1>
 
             <p className="mt-6 max-w-2xl text-lg text-gray-700">
               <strong>Gestionamos</strong> permisos de construcción, demoliciones,
@@ -172,14 +169,12 @@ export default function Page() {
 
       {/* CONTACTO */}
       <section id="contacto" className="py-8 px-6 md:px-8 mx-auto max-w-4xl">
-        {/* importante: encType en camelCase */}
         <form
           action="https://formsubmit.co/gestiones@estudiotekton.com"
           method="POST"
           encType="multipart/form-data"
           className="space-y-4"
         >
-          {/* Hidden útiles */}
           <input type="hidden" name="_subject" value="Nueva consulta — estudiotekton.com" />
           <input type="hidden" name="_template" value="table" />
           <input type="hidden" name="_captcha" value="false" />
@@ -189,7 +184,6 @@ export default function Page() {
             name="_autoresponse"
             value="¡Gracias! Recibimos tu consulta y te responderemos a la brevedad."
           />
-          {/* Honeypot anti-spam */}
           <input type="text" name="_honey" style={{ display: "none" }} />
 
           <div className="grid gap-4 md:grid-cols-2">
