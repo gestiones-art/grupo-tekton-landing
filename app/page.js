@@ -220,10 +220,11 @@ export default function Page() {
             />
           </div>
 
-    import PhoneField from "./components/PhoneField"; // ⬅️ arriba del archivo
 
-// ...dentro del <form> reemplazá el input de Teléfono por esto:
-<PhoneField
+<input
+  type="tel"
+  inputMode="tel"
+  autoComplete="tel"
   name="Teléfono / WhatsApp"
   placeholder="Teléfono / WhatsApp"
   pattern="^[0-9()+\\-.\\s]{6,20}$"
