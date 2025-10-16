@@ -135,25 +135,27 @@ export default function Page() {
 </div>
 
 
-      {/* CONTACTO */}
-   <section id="contacto" className="py-8 px-6 md:px-8 mx-auto max-w-4xl">
-     
+    {/* CONTACTO */}
+<section id="contacto" className="py-8 px-6 md:px-8 mx-auto max-w-4xl">
   {/* importante: encType en camelCase */}
-<form
-  action="https://formsubmit.co/gestiones@estudiotekton.com"
-  method="POST"
-  encType="multipart/form-data"
-  className="space-y-4"
->
-
+  <form
+    action="https://formsubmit.co/gestiones@estudiotekton.com"
+    method="POST"
+    encType="multipart/form-data"
+    className="space-y-4"
+  >
     {/* Hidden útiles */}
     <input type="hidden" name="_subject" value="Nueva consulta — estudiotekton.com" />
     <input type="hidden" name="_template" value="table" />
     <input type="hidden" name="_captcha" value="false" />
     <input type="hidden" name="_next" value="https://estudiotekton.com/#gracias" />
-    <input type="hidden" name="_autoresponse" value="¡Gracias! Recibimos tu consulta y te responderemos a la brevedad." />
+    <input
+      type="hidden"
+      name="_autoresponse"
+      value="¡Gracias! Recibimos tu consulta y te responderemos a la brevedad."
+    />
     {/* Honeypot anti-spam */}
-    <input type="text" name="_honey" style={{ display: 'none' }} />
+    <input type="text" name="_honey" style={{ display: "none" }} />
 
     <div className="grid gap-4 md:grid-cols-2">
       <input
@@ -165,14 +167,14 @@ export default function Page() {
       />
       <input
         type="email"
-        name="email"                   // importante para el auto-reply
+        name="email"
         placeholder="Email"
         required
         className="w-full rounded border px-4 py-3"
       />
     </div>
 
-    {/* Teléfono con validación (solo números y símbolos comunes) */}
+    {/* Teléfono con validación */}
     <input
       type="tel"
       name="Teléfono / WhatsApp"
@@ -182,14 +184,14 @@ export default function Page() {
       className="w-full rounded border px-4 py-3"
     />
 
-    {/* Mensaje (¡cerrado correctamente!) */}
+    {/* Mensaje */}
     <textarea
       name="Mensaje"
       placeholder="Contanos brevemente qué necesitás"
       rows={5}
       required
       className="w-full rounded border px-4 py-3"
-    ></textarea>
+    />
 
     {/* Adjuntos */}
     <div className="space-y-2">
@@ -198,47 +200,30 @@ export default function Page() {
       </label>
       <input
         type="file"
-        name="attachment"               // 👈 nombre que reconoce FormSubmit
+        name="attachment"
         accept=".pdf,.dwg,.dxf,.zip"
         multiple
-        className="w-full rounded border px-4 py-3
-                   file:mr-4 file:rounded file:border-0
-                   file:bg-gray-100 file:px-4 file:py-2"
+        className="w-full rounded border px-4 py-3 file:mr-4 file:rounded file:border-0 file:bg-gray-100 file:px-4 file:py-2"
       />
       <p className="text-xs text-gray-500">
         Si el archivo es muy pesado, subilo como .zip o compartí un enlace (Drive/WeTransfer).
       </p>
     </div>
 
-    {/* Opcional: enlace a carpeta de archivos */}
-    {/* 
-    <input
-      type="url"
-      name="Enlace a archivos"
-      placeholder="Enlace a carpeta (Drive/WeTransfer)"
-      className="w-full rounded border px-4 py-3"
-    />
-    */}
-
-    <button
-      type="submit"
-      className="w-full md:w-auto rounded bg-[#0e1524] px-6 py-3 text-white"
-    >
+    <button type="submit" className="w-full md:w-auto rounded bg-[#0e1524] px-6 py-3 text-white">
       Enviar consulta
     </button>
   </form>
 </section>
 
+{/* Cartel de Gracias (aparece cuando la URL termina en #gracias) */}
+<div
+  id="gracias"
+  className="fixed inset-x-0 top-4 mx-auto w-fit rounded-md bg-emerald-600 text-white px-4 py-2 shadow-lg"
+>
+  ¡Gracias! Recibimos tu consulta.
+</div>
 
-      {/* Cartel de Gracias (aparece cuando la URL termina en #gracias) */}
-      <div
-        id="gracias"
-        className="fixed inset-x-0 top-4 mx-auto w-fit rounded-md bg-emerald-600 text-white px-4 py-2 shadow-lg"
-      >
-        ¡Gracias! Recibimos tu consulta.
-      </div>
-   
-    </main>
-  );
+</main>
+);
 }
-
