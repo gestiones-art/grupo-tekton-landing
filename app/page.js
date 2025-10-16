@@ -35,9 +35,7 @@ export default function Page() {
               <div className="flex items-center gap-2">
                 <span className="text-2xl md:text-3xl font-semibold text-gray-800">
                   Estudio Tekton
-                </span>
-
-                  </span>
+         
               </div>
             </div>
 
