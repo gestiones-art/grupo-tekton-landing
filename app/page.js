@@ -173,7 +173,7 @@ export default function Page() {
       {/* Aviso: consulta general vs por trámite */}
 <div className="mb-6 rounded-2xl border bg-white p-5 shadow-sm">
   <h3 className="text-lg font-semibold text-gray-900 mb-1">
-    ¿Cómo querés hacer tu consulta?
+  Escribinos, estamos para ayudarte!
   </h3>
   <p className="text-gray-700">
     Si ya sabés cuál es el trámite que necesitás, <strong>entr&#225; y complet&#225; el formulario específico</strong> para adjuntar la documentación y agilizar el análisis.
