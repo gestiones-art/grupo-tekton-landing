@@ -41,38 +41,24 @@ export default function Page() {
 
         <div className="bg-white border-l-4 border-emerald-600 p-6 rounded-2xl shadow-md">
           <h2 className="text-2xl font-bold text-gray-800 mb-4">
-            Documentación que debe presentar el propietario
+              Documentación a presentar
+
           </h2>
-          <ul className="list-disc pl-6 space-y-2 text-gray-700">
-            <li>
-              <strong>Plano en formato DWG</strong> relevado (municipal), firmado por profesional
-              matriculado.
-            </li>
-            <li>
-              <strong>Escritura inscripta</strong> en el Registro de la Propiedad Inmueble.
-            </li>
-            <li>
-              <strong>Certificación parcelaria</strong> vigente emitida por Catastro.
-            </li>
-            <li>
-              <strong>Libre deuda de ABL</strong> y tasas municipales.
-            </li>
-            <li>
-              <strong>Fotografías</strong> del estado actual de la propiedad (fachada e interiores).
-            </li>
-            <li>
-              <strong>Memoria descriptiva</strong> de lo ejecutado (superficies, materiales y
-              instalaciones).
-            </li>
-            <li>
-              <strong>Planilla de estadística</strong> y formularios municipales firmados.
-            </li>
-            <li>
-              <strong>Plano visado por el Colegio Profesional</strong> (CAPBA / CAAITBA), según
-              corresponda.
-            </li>
-          </ul>
-        </div>
+            
+  <p className="text-gray-700 mb-4">
+    Nos ocupamos de reunir, completar y presentar toda la documentación ante el organismo correspondiente.
+  </p>
+  <ul className="list-disc pl-6 space-y-1 text-gray-800">
+    <li><strong>Plano en formato DWG</strong> relevado (municipal), firmado por profesional matriculado.</li>
+    <li><strong>Escritura inscripta</strong> en el Registro de la Propiedad Inmueble.</li>
+    <li><strong>Certificación parcelaria</strong> vigente emitida por Catastro.</li>
+    <li><strong>Libre deuda de ABL</strong> y tasas municipales.</li>
+    <li><strong>Fotografías</strong> del estado actual de la propiedad (fachada e interiores).</li>
+    <li><strong>Memoria descriptiva</strong> de lo ejecutado (superficies, materiales e instalaciones).</li>
+    <li><strong>Planilla de estadística</strong> y formularios municipales firmados.</li>
+    <li><strong>Plano visado por el Colegio Profesional</strong> (CAPBA / CAAITBA), según corresponda.</li>
+  </ul>
+</div>
 
         <div className="bg-gradient-to-r from-emerald-600 to-emerald-500 text-white p-8 rounded-2xl shadow-lg text-center">
           <h3 className="text-2xl font-semibold mb-2">¿Tenés una obra para regularizar?</h3>
