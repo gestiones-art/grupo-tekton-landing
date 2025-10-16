@@ -4,6 +4,9 @@
 const WHATSAPP = "5491169988414";
 
 // (FormSubmit ya no requiere endpoint propio, va directo al email en action)
+
+import Link from "next/link";
+
 export const metadata = {
   title: "Grupo Tékton — Gestión Municipal",
   description:
