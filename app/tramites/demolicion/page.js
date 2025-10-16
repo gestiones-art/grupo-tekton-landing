@@ -5,7 +5,7 @@ import Link from "next/link";
 export const metadata = {
   title: "Permiso de Demolición Total — Grupo Tékton",
   description:
-    "Gestión integral de expedientes de demolición total en Zona Norte. Incluye planificación, impacto ambiental, seguridad y presentación municipal completa.",
+    "Documentación requerida para solicitar un permiso de demolición total ante el municipio. Asesoramiento completo para propietarios.",
 };
 
 export default function Page() {
@@ -17,65 +17,52 @@ export default function Page() {
             Permiso de Demolición Total
           </h1>
           <p className="text-lg text-gray-700 leading-relaxed">
-            En <strong>Grupo Tékton</strong> gestionamos integralmente la tramitación municipal para
-            la demolición total de edificaciones en Zona Norte (San Isidro, Vicente López, San
-            Fernando, Tigre y San Martín). Incluye coordinación técnica, documentación completa,
-            visados y presentación ante el área de Obras Particulares.
+            En <strong>Grupo Tékton</strong> acompañamos al propietario en la
+            preparación y presentación de la documentación necesaria para
+            gestionar el <strong>permiso de demolición total</strong> ante el
+            municipio correspondiente.
           </p>
         </div>
 
         <div>
           <h2 className="text-2xl font-semibold text-gray-800 mb-3">
-            Documentación requerida para la iniciación del expediente:
+            Documentación que debe presentar el propietario:
           </h2>
-          <ol className="list-decimal pl-6 space-y-2 text-gray-700">
+          <ul className="list-disc pl-6 space-y-2 text-gray-700">
+            <li>Plano en formato municipal (DWG o PDF) firmado por profesional matriculado.</li>
             <li>
-              <strong>Planilla de Inicio de Expediente.</strong>
+              <strong>Certificación parcelaria</strong> vigente (Catastro,
+              título de propiedad y Libre Deuda).
             </li>
             <li>
-              <strong>Certificación parcelaria</strong> vigente con plazo de obra firmado y foliatura
-              completa (Plano visado por Catastro, título de propiedad y Certificado Libre Deuda).
+              Copia de la <strong>escritura o boleto de compraventa</strong> que
+              acredite titularidad.
             </li>
             <li>
-              <strong>Planilla de Forestación.</strong>
+              <strong>Certificado de desratización</strong> actualizado.
             </li>
             <li>
-              <strong>Planilla de Veredas.</strong>
+              <strong>Planilla de inicio de expediente</strong> y formularios
+              completos firmados.
+            </li>
+            <li>Fotografías del estado actual del inmueble.</li>
+            <li>
+              <strong>Memoria descriptiva</strong> de los trabajos de
+              demolición (método, horarios, medidas de seguridad).
             </li>
             <li>
-              <strong>Planilla de Consideraciones generales de la etapa de obra.</strong>
+              <strong>Plano visado por el Colegio Profesional</strong>{" "}
+              correspondiente (CAPBA / CAAITBA).
             </li>
-            <li>
-              <strong>Planilla de estadísticas</strong>, por duplicado.
-            </li>
-            <li>
-              <strong>Fotografías</strong> impresas según Decreto Nº 1934/09.
-            </li>
-            <li>
-              <strong>Memoria descriptiva:</strong> descripción de las tareas a realizar, estimación
-              de horarios, modalidades, nivel de ruido, cantidad de personas y datos que permitan
-              comprender la actividad.
-            </li>
-            <li>
-              <strong>Certificado de desratización.</strong>
-            </li>
-            <li>
-              <strong>Copia certificada del antecedente.</strong>
-            </li>
-            <li>
-              <strong>Lista de chequeo de contenido de planos.</strong>
-            </li>
-            <li>
-              <strong>Copia de plano visado en el Colegio Profesional</strong> correspondiente.
-            </li>
-          </ol>
+          </ul>
         </div>
 
-        <div className="border-l-4 border-gray-300 pl-4 text-gray-700 italic">
-          *Todo expediente debe presentarse en formato digital con su correspondiente foliatura y
-          documentación respaldatoria. Grupo Tékton acompaña el proceso completo desde la preparación
-          hasta la obtención del permiso municipal.
-        </div>
+        <p className="text-gray-700 leading-relaxed border-l-4 border-gray-200 pl-4 italic">
+          Una vez reunida la documentación, el municipio verifica su
+          completitud y autoriza la apertura del expediente. Grupo Tékton se
+          encarga de acompañar al propietario en todas las etapas hasta la
+          obtención del permiso final.
+        </p>
 
         <div className="pt-6">
           <Link href="/" className="text-[#0e1524] font-medium hover:underline">
