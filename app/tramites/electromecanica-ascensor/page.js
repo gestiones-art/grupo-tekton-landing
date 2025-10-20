@@ -1,6 +1,7 @@
 export const metadata = {
   title: "Trámite de Electromecánica y Ascensor | Estudio Tekton",
-  description: "Presentación municipal y habilitación de instalaciones electromecánicas, ascensores y montacargas. Gestión completa ante los municipios de San Isidro, Martínez y zona norte.",
+  description:
+    "Presentación municipal y habilitación de instalaciones electromecánicas, ascensores y montacargas. Gestión completa ante los municipios de San Isidro, Martínez y zona norte.",
 };
 
 export default function ElectromecanicaAscensor() {
