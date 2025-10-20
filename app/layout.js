@@ -10,6 +10,15 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="es">
+
+  <head>
+    <link rel="canonical" href="https://estudiotekton.com/" />
+  </head>
+  <body>{children}</body>
+</html>
+
+
+    
       <body className="bg-gray-100 text-gray-900">
         {children}
       </body>
