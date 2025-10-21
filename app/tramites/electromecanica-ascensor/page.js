@@ -4,7 +4,6 @@ export const metadata = {
     "Presentación municipal y habilitación de instalaciones electromecánicas, ascensores y montacargas. Gestión completa ante los municipios de San Isidro, Martínez y zona norte.",
 };
 
-
 export default function ElectromecanicaAscensor() {
   return (
     <main style={{ padding: "80px 20px", maxWidth: "700px", margin: "0 auto" }}>
