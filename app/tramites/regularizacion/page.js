@@ -2,10 +2,13 @@ import Image from "next/image";
 import Link from "next/link";
 
 export const metadata = {
-  title: "Regularización de Obra y Plano Conforme | San Isidro y Zona Norte — Grupo Tékton",
+  title:
+    "Regularización de Obra en San Isidro | Planos y Gestoría Municipal — Grupo Tékton",
   description:
-    "Regularización de construcciones existentes y plano conforme en San Isidro y zona norte. Relevamiento, planos, visado profesional y presentación municipal.",
+    "Regularización de construcciones existentes y plano conforme en San Isidro y zona norte. Relevamiento, planos, visado profesional y gestión municipal hasta la aprobación final.",
+  alternates: { canonical: "/tramites/regularizacion" },
 };
+
 
 
 export default function TramitePage() {
