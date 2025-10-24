@@ -3,10 +3,12 @@
 import Link from "next/link";
 
 export const metadata = {
-  title: "Permiso de Demolición Total — Grupo Tékton",
+  title: "Permiso de Demolición en San Isidro | Trámites Municipales — Grupo Tékton",
   description:
-    "Documentación requerida para solicitar un permiso de demolición total ante el municipio. Asesoramiento completo para propietarios.",
+    "Gestión completa del permiso de demolición ante el municipio de San Isidro y zona norte. Presentación de planos, certificados y visado profesional hasta la aprobación final.",
+  alternates: { canonical: "/tramites/demolicion" },
 };
+
 
 export default function TramitePage() {
   return (
