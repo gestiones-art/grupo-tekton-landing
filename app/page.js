@@ -6,9 +6,10 @@ import PhoneField from "./components/PhoneField";
 
 
 export const metadata = {
-  title: "Grupo Tékton — Gestión Municipal",
+  "Gestoría de Permisos de Construcción en San Isidro y Zona Norte | Grupo Tékton",
   description:
-    "Gestiones municipales de Obras. Mejora de procesos para minimizar observaciones y optimizar tiempos, con estricto cumplimiento normativo.",
+    "Gestiones municipales de Obras. Te ayudamos a minimizar observaciones y optimizar tiempos, con estricto cumplimiento normativo.",
+      "Gestión municipal de permisos de construcción, regularización y conforme a obra. Trámites ante San Isidro y municipios de zona norte. Planos, visados y seguimiento completo.",
 };
 
 export default function Page() {
