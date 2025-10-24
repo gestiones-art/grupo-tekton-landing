@@ -1,266 +1,169 @@
-// app/page.js
+// grupo-tekton-landing/app/page.js
+import Link from "next/link";
 
-// CONFIG: WhatsApp en formato internacional sin + ni espacios
-const WHATSAPP = "5491169988414";
-import PhoneField from "./components/PhoneField";
-
-
+// 🔹 SEO para la Home
 export const metadata = {
-  "Gestoría de Permisos de Construcción en San Isidro y Zona Norte | Grupo Tékton",
+  title:
+    "Gestoría de Permisos de Construcción en San Isidro y Zona Norte | Grupo Tékton",
   description:
-    "Gestiones municipales de Obras. Te ayudamos a minimizar observaciones y optimizar tiempos, con estricto cumplimiento normativo.",
-      "Gestión municipal de permisos de construcción, regularización y conforme a obra. Trámites ante San Isidro y municipios de zona norte. Planos, visados y seguimiento completo.",
+    "Gestión municipal de permisos de construcción, regularización y conforme a obra. Trámites ante San Isidro, Martínez, Boulogne y zona norte. Planos, visados y seguimiento completo.",
 };
 
-export default function Page() {
-  const waText = encodeURIComponent(
-    "Hola, vengo de estudiotekton.com y necesito ayuda con una gestión municipal."
-  );
-  const waHref = `https://wa.me/${WHATSAPP}?text=${waText}`;
-
+export default function HomePage() {
   return (
- <main className="min-h-screen bg-gray-100 text-gray-900">
-
+    <main className="min-h-screen bg-gray-100 text-gray-900">
       {/* HERO */}
-      <section className="mx-auto max-w-7xl px-6 md:px-8 py-10 md:py-16">
-        <div className="grid md:grid-cols-2 gap-10 items-start">
-          <div>
-            {/* Lockup: logo + nombre (sin badge) */}
-            <div className="mt-2 flex items-center gap-3">
-              <img
-                src="/logo-tekton-squad.svg"
-                alt="Estudio Tekton"
-                className="h-16 w-16 rounded-xl shadow-sm"
-              />
-              <span className="text-2xl md:text-3xl font-semibold text-gray-800">
-                Estudio Tekton
-              </span>
-            </div>
-
-            {/* Título más moderado */}
-            <h1 className="mt-4 text-2xl md:text-4xl font-bold leading-snug text-gray-900">
-              Gestiones municipales para obras
-            </h1>
-
-            <p className="mt-6 max-w-2xl text-lg text-gray-700">
-              <strong>Gestionamos</strong> permisos de construcción, demoliciones,
-              conforme a obra, regularizaciones y subdivisiones en Zona Norte.
-              Enfocamos el trabajo en <strong>mejorar procesos</strong> para minimizar
-              observaciones y <strong>optimizar tiempos administrativos</strong>, siempre
-              con estricto cumplimiento normativo.
-            </p>
-
-            <div className="mt-8 flex flex-col sm:flex-row gap-3">
-              <a
-                href={waHref}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center justify-center gap-2 rounded-xl bg-[#25D366] text-white px-5 py-3 font-medium hover:opacity-90"
-                aria-label="Abrir WhatsApp"
-              >
-                {/* Ícono WhatsApp */}
-                <svg
-                  className="w-[18px] h-[18px]"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 32 32"
-                  fill="currentColor"
-                  aria-hidden="true"
-                >
-                  <path d="M16.001 3.2c-7.062 0-12.8 5.737-12.8 12.8 0 2.259.589 4.377 1.615 6.22L3.2 28.8l6.78-1.777a12.738 12.738 0 0 0 6.02 1.536h.001c7.062 0 12.799-5.737 12.799-12.8s-5.737-12.8-12.8-12.8zm7.546 17.316c-.33.934-1.627 1.71-2.245 1.735-.599.025-1.365.036-2.202-.14a9.944 9.944 0 0 1-4.35-1.927c-1.93-1.336-3.168-2.98-3.547-3.477-.378-.497-1.362-1.813-1.362-3.462s.86-2.448 1.167-2.783c.307-.335.668-.419.89-.419.221 0 .443 0 .64.012.205.01.48-.077.751.573.27.65.922 2.246 1.003 2.408.082.162.137.353.025.57-.112.216-.169.353-.335.541-.166.189-.352.422-.503.568-.166.162-.339.338-.145.662.194.324.867 1.429 1.862 2.314 1.281 1.12 2.362 1.466 2.686 1.63s.49.135.67-.083c.18-.218.773-.9.98-1.211.205-.31.422-.257.704-.153.282.103 1.79.844 2.099.997.31.153.515.223.59.346.074.123.074.709-.257 1.643z"/>
-                </svg>
-                WhatsApp
-              </a>
-            </div>
-
-            <p className="mt-8 text-sm text-gray-600">
-              San Isidro · Vicente López · San Fernando · Tigre · San Martín
-            </p>
-          </div>
-
-          {/* Tarjetas (servicios) */}
-          <div className="grid gap-4" id="servicios">
-            {/* Fila 1 */}
-            <div className="grid sm:grid-cols-2 gap-4">
-            <a href="/tramites/regularizacion" className="rounded-2xl border bg-white p-5 hover:bg-gray-50 transition block">
-
-                <h3 className="font-semibold text-lg">Regularización de planos</h3>
-                <p className="mt-1 text-sm text-gray-600">
-                  Obras existentes sin permiso o con diferencias.
-                </p>
-              </a>
-
-              <a
-                href="/tramites/demolicion"
-                className="rounded-2xl border bg-white p-5 hover:bg-gray-50 transition block">
-                <h3 className="font-semibold text-lg">Permiso demolición total</h3>
-                <p className="mt-1 text-sm text-gray-600">
-                  Planificación + impacto + seguridad
-                </p>
-              </a>
-            </div>
-
-            {/* Fila 2 */}
-            <div className="grid sm:grid-cols-2 gap-4">
-              <a
-                href="/tramites/construccion"
-               className="rounded-2xl border bg-white p-5 hover:bg-gray-50 transition block">
-                 
-                <h3 className="font-semibold text-lg">Permiso de construcción</h3>
-                <p className="mt-1 text-sm text-gray-600">
-                  Prefactibilidad FOT/FOS + cómputos
-                </p>
-              </a>
-
-              <a
-                href="/tramites/conforme-obra"
-               className="rounded-2xl border bg-white p-5 hover:bg-gray-50 transition block">
-                 
-                <h3 className="font-semibold text-lg">Conforme a obra</h3>
-                <p className="mt-1 text-sm text-gray-600">
-                  Levantamientos + visado + archivo
-                </p>
-              </a>
-            </div>
-
-            {/* Fila 3 */}
-            <div className="grid sm:grid-cols-2 gap-4">
-              <a
-                href="/tramites/electromecanica-ascensor"
-              className="rounded-2xl border bg-white p-5 hover:bg-gray-50 transition block">
-                
-                <h3 className="font-semibold text-lg">Electromecánica / Ascensor</h3>
-                <p className="mt-1 text-sm text-gray-600">
-                  Memorias + expedientes específicos
-                </p>
-              </a>
-
-              <a
-                href="/tramites/subdivision-ph"
-               className="rounded-2xl border bg-white p-5 hover:bg-gray-50 transition block">
-                 
-                <h3 className="font-semibold text-lg">Subdivisión / PH</h3>
-                <p className="mt-1 text-sm text-gray-600">
-                  Geodesia + catastro + escrituras
-                </p>
-              </a>
-            </div>
-
-            {/* Fila 4 */}
-            <div className="grid sm:grid-cols-2 gap-4">
-              <a
-                href="/tramites/impacto-ambiental"
-              className="rounded-2xl border bg-white p-5 hover:bg-gray-50 transition block">
-                
-                <h3 className="font-semibold text-lg">Impacto ambiental</h3>
-                <p className="mt-1 text-sm text-gray-600">
-                  Gestión integral y seguimiento
-                </p>
-              </a>
-            </div>
-
-            <p className="text-xs text-gray-500">
-              + FOT/FOS, prefactibilidad, informes técnicos y más.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      {/* CONTACTO */}
-      <section id="contacto" className="py-8 px-6 md:px-8 mx-auto max-w-4xl">
-        {/* Aviso: consulta general vs por trámite */}
-        <div className="mb-6 rounded-2xl border bg-white p-5 shadow-sm">
-          <h3 className="text-lg font-semibold text-gray-900 mb-1">
-            ¿Cómo querés hacer tu consulta?
-          </h3>
-          <p className="text-gray-700">
-            Si ya sabés cuál es el trámite que necesitás, <strong>entrá y completá el formulario específico</strong> para adjuntar la documentación y agilizar el análisis.
-            <br /><br />
-            Si no, <strong>dejanos tu consulta acá</strong> y te guiamos. Tené a mano información de la propiedad a consultar:
-            <strong> domicilio completo, plano antecedente o cualquier dato que sea de utilidad.</strong>
-          </p>
-        </div>
-
-        <form
-          action="https://formsubmit.co/gestiones@estudiotekton.com"
-          method="POST"
-          encType="multipart/form-data"
-          className="space-y-4"
-        >
-          {/* Hidden útiles */}
-          <input type="hidden" name="_subject" value="Nueva consulta — estudiotekton.com" />
-          <input type="hidden" name="_template" value="table" />
-          <input type="hidden" name="_captcha" value="false" />
-          <input type="hidden" name="_next" value="https://estudiotekton.com/#gracias" />
-          <input
-            type="hidden"
-            name="_autoresponse"
-            value="¡Gracias! Recibimos tu consulta y te responderemos a la brevedad."
-          />
-          {/* Honeypot anti-spam */}
-          <input type="text" name="_honey" style={{ display: "none" }} />
-
-          <div className="grid gap-4 md:grid-cols-2">
-            <input
-              type="text"
-              name="Nombre / Estudio"
-              placeholder="Nombre"
-              required
-              className="w-full rounded border px-4 py-3"
-            />
-            <input
-              type="email"
-              name="email"
-              placeholder="Email"
-              required
-              className="w-full rounded border px-4 py-3"
-            />
-          </div>
-
-       <PhoneField />
-
-
-          <textarea
-            name="Mensaje"
-            placeholder="Contanos brevemente qué necesitás"
-            rows={5}
-            required
-            className="w-full rounded border px-4 py-3"
-          ></textarea>
-
-          {/* Adjuntos */}
-          <div className="space-y-2">
-            <label className="block text-sm text-gray-700">
-              Adjuntar archivos (PDF / DWG / DXF / ZIP — máx. 10 MB c/u)
-            </label>
-            <input
-              type="file"
-              name="attachment"
-              accept=".pdf,.dwg,.dxf,.zip"
-              multiple
-              className="w-full rounded border px-4 py-3
-                         file:mr-4 file:rounded file:border-0
-                         file:bg-gray-100 file:px-4 file:py-2"
-            />
-            <p className="text-xs text-gray-500">
-              Si el archivo es muy pesado, subilo como .zip o compartí un enlace (Drive/WeTransfer).
-            </p>
-          </div>
-
-          <button
-            type="submit"
-            className="w-full md:w-auto rounded bg-[#0e1524] px-6 py-3 text-white"
+      <section className="bg-[#0b132b] text-white text-center py-20">
+        <h1 className="text-4xl font-bold mb-3">
+          Gestoría de Permisos de Construcción en San Isidro y Zona Norte
+        </h1>
+        <p className="text-gray-300 max-w-3xl mx-auto">
+          En <strong>Grupo Tékton</strong> gestionamos{" "}
+          <strong>permisos de construcción</strong>,{" "}
+          <strong>regularización</strong> y <strong>conforme a obra</strong>{" "}
+          ante los municipios de <strong>San Isidro, Martínez, Boulogne</strong>{" "}
+          y <strong>zona norte</strong>. Nos ocupamos de planos, visados
+          profesionales y presentación municipal hasta la aprobación final.
+        </p>
+        <div className="mt-6">
+          <a
+            href="https://wa.me/5491169988414"
+            className="inline-block bg-green-600 hover:bg-green-700 text-white font-semibold px-6 py-2 rounded-full transition"
           >
-            Enviar consulta
-          </button>
-        </form>
+            Consultar por WhatsApp
+          </a>
+        </div>
       </section>
 
-      {/* Cartel de Gracias */}
-      <div
-        id="gracias"
-        className="fixed inset-x-0 top-4 mx-auto w-fit rounded-md bg-emerald-600 text-white px-4 py-2 shadow-lg"
-      >
-        ¡Gracias! Recibimos tu consulta.
+      {/* INTRO */}
+      <section className="max-w-4xl mx-auto p-6 leading-relaxed">
+        <p>
+          Trabajamos con propietarios, estudios y desarrolladores para minimizar
+          observaciones, cumplir el C.O.U. y acelerar los tiempos de aprobación.
+          Coordinamos la documentación técnica y legal, el visado profesional
+          (CAPBA / CAAITBA) y el seguimiento del expediente en el municipio.
+        </p>
+      </section>
+
+      {/* TRÁMITES DESTACADOS */}
+      <section className="max-w-5xl mx-auto grid gap-6 p-6 md:grid-cols-2">
+        {/* Permiso de Construcción */}
+        <article className="bg-white shadow-md rounded-2xl p-6 border">
+          <h2 className="text-xl font-semibold mb-2 text-gray-800">
+            Permiso de Construcción
+          </h2>
+          <p className="text-gray-700 mb-4">
+            Presentación para obra nueva o ampliación. Planos municipales, cómputo
+            de superficies, memoria descriptiva, visado y seguimiento hasta la
+            aprobación.
+          </p>
+          <Link href="/tramites/permiso-de-construccion" className="text-green-700 underline">
+            Ver trámite →
+          </Link>
+        </article>
+
+        {/* Regularización */}
+        <article className="bg-white shadow-md rounded-2xl p-6 border">
+          <h2 className="text-xl font-semibold mb-2 text-gray-800">
+            Regularización de Obra
+          </h2>
+          <p className="text-gray-700 mb-4">
+            Relevamiento de construcciones existentes, plano de regularización y
+            gestión del expediente para dejar la propiedad en regla.
+          </p>
+          <Link href="/tramites/regularizacion" className="text-green-700 underline">
+            Ver trámite →
+          </Link>
+        </article>
+
+        {/* Conforme a Obra */}
+        <article className="bg-white shadow-md rounded-2xl p-6 border">
+          <h2 className="text-xl font-semibold mb-2 text-gray-800">
+            Conforme a Obra (Final de Obra)
+          </h2>
+          <p className="text-gray-700 mb-4">
+            Verificación, documentación y presentación para obtener el Conforme
+            a Obra / Final de Obra ante el municipio.
+          </p>
+          <Link href="/tramites/conforme-a-obra" className="text-green-700 underline">
+            Ver trámite →
+          </Link>
+        </article>
+
+        {/* Electromecánica y Ascensor */}
+        <article className="bg-white shadow-md rounded-2xl p-6 border">
+          <h2 className="text-xl font-semibold mb-2 text-gray-800">
+            Electromecánica y Ascensor
+          </h2>
+          <p className="text-gray-700 mb-4">
+            Habilitación de ascensores y montacargas. Memoria técnica, visado y
+            gestión municipal completa hasta la resolución.
+          </p>
+          <Link href="/tramites/electromecanica-ascensor" className="text-green-700 underline">
+            Ver trámite →
+          </Link>
+        </article>
+      </section>
+
+      {/* CTA PRINCIPAL */}
+      <section className="max-w-3xl mx-auto bg-green-600 text-white rounded-2xl p-6 text-center shadow-md mb-10">
+        <h3 className="text-lg font-semibold mb-2">
+          ¿Querés que nos ocupemos de tu trámite municipal?
+        </h3>
+        <p className="text-sm mb-4">
+          Asesoramiento inicial sin cargo. Coordinamos planos, visado y
+          presentación hasta la aprobación.
+        </p>
+        <div className="flex items-center justify-center gap-3">
+          <a
+            href="https://wa.me/5491169988414"
+            className="bg-white text-green-700 font-semibold px-6 py-2 rounded-full hover:bg-gray-100 transition"
+          >
+            Escribir por WhatsApp
+          </a>
+          <Link href="/contacto" className="underline text-white/90">
+            O completar el formulario
+          </Link>
+        </div>
+      </section>
+
+      {/* ENLACES INTERNOS (SEO) */}
+      <section className="max-w-4xl mx-auto p-6 text-sm text-gray-700">
+        <p className="mb-2">También gestionamos:</p>
+        <ul className="list-disc pl-6">
+          <li>
+            <Link href="/tramites/permiso-de-construccion" className="underline">
+              Permiso de Construcción
+            </Link>
+          </li>
+          <li>
+            <Link href="/tramites/regularizacion" className="underline">
+              Regularización de Obra
+            </Link>
+          </li>
+          <li>
+            <Link href="/tramites/conforme-a-obra" className="underline">
+              Conforme a Obra (Final de Obra)
+            </Link>
+          </li>
+          <li>
+            <Link href="/tramites/electromecanica-ascensor" className="underline">
+              Habilitación de Ascensor
+            </Link>
+          </li>
+          <li>
+            <Link href="/contacto" className="underline">
+              Contacto
+            </Link>
+          </li>
+        </ul>
+      </section>
+
+      {/* FOOTER SIMPLE */}
+      <div className="text-center mb-10">
+        <span className="text-gray-500 text-xs">
+          © {new Date().getFullYear()} Grupo Tékton — Blanco Encalada 2229, La Horqueta, San Isidro
+        </span>
       </div>
     </main>
   );
