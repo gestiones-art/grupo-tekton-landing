@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Link from "next/link";
 
 export const metadata = {
@@ -22,55 +21,34 @@ export default function TramitePage() {
       {/* Introducción */}
       <section className="max-w-4xl mx-auto p-6 leading-relaxed">
         <p>
-          En <strong>Grupo Tékton</strong> realizamos la{" "}
-          <strong>gestión integral</strong> para habilitar sistemas de
-          elevación (ascensores y montacargas) y otras instalaciones
-          electromecánicas, cumpliendo normativa municipal y requisitos
-          técnicos del colegio profesional correspondiente.
+          En <strong>Grupo Tékton</strong> asesoramos y gestionamos la{" "}
+          <strong>habilitación de sistemas de elevación</strong> (ascensores y
+          montacargas) y otras instalaciones electromecánicas, cumpliendo la
+          normativa municipal y los requisitos técnicos del colegio profesional.
         </p>
       </section>
 
-      {/* Alcance / Incluye */}
-      <section className="max-w-3xl mx-auto bg-white shadow-md rounded-2xl p-6 border mb-8">
-        <h2 className="text-xl font-semibold mb-4 text-gray-800">Incluye</h2>
-        <p className="text-gray-700 mb-3">
-          Nos ocupamos de coordinar a profesionales matriculados y de presentar
-          toda la documentación técnica y legal hasta la aprobación final.
-        </p>
-        <ul className="list-disc pl-6 space-y-1 text-gray-700">
-          <li>Revisión de planos y documentación técnica existente.</li>
-          <li>
-            Confección/ajuste de memoria técnica y planillas municipales del
-            equipo de elevación.
-          </li>
-          <li>
-            Visado del plano por el colegio profesional (CAPBA/CAAITBA), según
-            corresponda.
-          </li>
-          <li>Presentación del trámite ante el municipio.</li>
-          <li>Atención de observaciones y seguimiento del expediente.</li>
-          <li>Gestión de la resolución y habilitación final.</li>
-        </ul>
-      </section>
-
-      {/* Documentación habitual */}
+      {/* ÚNICA tarjeta (mismo estilo que Permiso de Construcción) */}
       <section className="max-w-3xl mx-auto bg-white shadow-md rounded-2xl p-6 border mb-8">
         <h2 className="text-xl font-semibold mb-4 text-gray-800">
-          Documentación habitual
+          Documentación a presentar
         </h2>
+        <p className="text-gray-700 mb-3">
+          Reunimos y presentamos la documentación técnica y legal ante el
+          organismo correspondiente, y hacemos el seguimiento hasta la aprobación.
+        </p>
         <ul className="list-disc pl-6 space-y-1 text-gray-700">
-          <li>
-            Plano municipal y/o croquis de ubicación del equipo (DWG/PDF)
-            firmado por profesional.
-          </li>
+          <li>Plano municipal / croquis de ubicación del equipo (DWG/PDF) firmado.</li>
           <li>Memoria descriptiva y fichas técnicas del ascensor/montacargas.</li>
-          <li>Certificados del instalador y de mantenimiento habilitado.</li>
+          <li>Certificados del instalador y del servicio de mantenimiento habilitado.</li>
           <li>Certificación parcelaria y libre deuda de tasas municipales.</li>
           <li>Escritura o título y datos del propietario.</li>
-          <li>Visado del colegio profesional correspondiente.</li>
+          <li>Plano visado por el Colegio Profesional (CAPBA / CAAITBA), según corresponda.</li>
+          <li>Atención de observaciones municipales y seguimiento del expediente.</li>
+          <li>Gestión de la resolución y habilitación final.</li>
         </ul>
         <p className="text-sm text-gray-500 mt-3">
-          *La lista exacta puede variar según municipio y tipología del equipo.
+          *La lista puede variar según municipio y tipología del equipo.
         </p>
       </section>
 
@@ -80,8 +58,7 @@ export default function TramitePage() {
           ¿Necesitás habilitar un ascensor o montacargas?
         </h3>
         <p className="text-sm mb-4">
-          Te acompañamos en todo el proceso: desde la verificación técnica hasta
-          la aprobación municipal.
+          Nos ocupamos de la presentación completa y el seguimiento ante el municipio.
         </p>
         <a
           href="https://wa.me/5491169988414"
