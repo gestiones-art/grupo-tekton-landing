@@ -67,16 +67,7 @@ export default function TramitePage() {
         </a>
       </section>
 
-      {/* Enlaces internos */}
-      <div className="mt-8 text-sm text-gray-700 max-w-3xl mx-auto px-6">
-        <p className="mb-2">También gestionamos:</p>
-        <ul className="list-disc pl-6">
-          <li><a className="underline" href="/tramites/permiso-de-construccion">Permiso de Construcción</a></li>
-          <li><a className="underline" href="/tramites/regularizacion">Regularización de Obra</a></li>
-          <li><a className="underline" href="/tramites/conforme-a-obra">Conforme a Obra (Final de Obra)</a></li>
-          <li><a className="underline" href="/contacto">Contacto</a></li>
-        </ul>
-      </div>
+    
 
       {/* Volver */}
       <div className="text-center mt-8 mb-16">
