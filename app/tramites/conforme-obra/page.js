@@ -1,9 +1,11 @@
 import Link from "next/link";
 
 export const metadata = {
-  title: "Conforme a Obra (Final de Obra) en San Isidro | Gestoría — Grupo Tékton",
+  title:
+    "Conforme a Obra (Final de Obra) en San Isidro | Planos Municipales — Grupo Tékton",
   description:
-    "Trámite de Conforme a Obra / Final de Obra en San Isidro y zona norte. Verificación, documentación, visado y presentación para obtener la constancia municipal.",
+    "Trámite de Conforme a Obra o Final de Obra en San Isidro, Martínez y zona norte. Verificación y presentación final para obtener la aprobación municipal de las obras ejecutadas.",
+  alternates: { canonical: "/tramites/conforme-a-obra" },
 };
 
 
