@@ -4,9 +4,9 @@ import Link from "next/link";
 export const metadata = {
   title: "Permiso de Construcción en San Isidro | Gestoría Zona Norte — Grupo Tékton",
   description:
-    "Gestión completa del permiso de obra nueva o ampliación en San Isidro y zona norte. Planos municipales, visado CAPBA/CAAITBA y seguimiento del expediente hasta la aprobación.",
+    "Gestión completa del permiso de obra nueva o ampliación en San Isidro y zona norte. Planos municipales, visado CAPBA/CAAITBA y seguimiento del expediente hasta la aprobación final.",
+  alternates: { canonical: "/tramites/permiso-de-construccion" },
 };
-
 
 
 export default function TramitePage() {
