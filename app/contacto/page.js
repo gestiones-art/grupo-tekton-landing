@@ -46,6 +46,35 @@ export default function ContactoPage() {
           </button>
         </form>
       </section>
+                    <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "LocalBusiness",
+            name: "Estudio Tekton",
+            url: "https://estudiotekton.com",
+            image: "https://estudiotekton.com/logo.png",
+            telephone: "+54 9 11 6998-8414",
+            email: "gestiones@estudiotekton.com",
+            address: {
+              "@type": "PostalAddress",
+              streetAddress: "Blanco Encalada 2229",
+              addressLocality: "La Horqueta, San Isidro",
+              addressRegion: "Buenos Aires",
+              postalCode: "1643",
+              addressCountry: "AR",
+            },
+            openingHours: "Mo-Fr 09:00-17:00",
+            areaServed: "San Isidro, Martínez y zona norte",
+            sameAs: [
+              "https://www.instagram.com/estudiotekton",
+              "https://www.linkedin.com/company/estudiotekton"
+            ],
+          }),
+        }}
+      />
+
     </main>
   );
 }
