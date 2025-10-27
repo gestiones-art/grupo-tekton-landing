@@ -3,13 +3,22 @@ import "./globals.css";
 import Script from "next/script";
 
 export const metadata = {
-  title: "Estudio Tékton",
-  description: "Gestión municipal y procesos técnicos en Zona Norte.",
-  // 👇 canónica explícita
-  alternates: {
-    canonical: "https://estudiotekton.com/",
+  title: "Gestoría Municipal y Permisos de Construcción | Estudio Tekton",
+  description:
+    "Gestión de permisos de construcción, regularización y conforme a obra en San Isidro, Martínez, Boulogne y zona norte. Grupo Tekton – Gestoría Municipal profesional.",
+  alternates: { canonical: "https://estudiotekton.com/" },
+  openGraph: {
+    title: "Estudio Tekton | Gestoría Municipal Zona Norte",
+    description:
+      "Permisos de construcción, regularización de obra y habilitaciones municipales en San Isidro y alrededores.",
+    url: "https://estudiotekton.com/",
+    siteName: "Estudio Tekton",
+    type: "website",
+    locale: "es_AR",
   },
+  robots: { index: true, follow: true },
 };
+
 
 export default function RootLayout({ children }) {
   return (
