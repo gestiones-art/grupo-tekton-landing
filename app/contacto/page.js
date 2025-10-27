@@ -13,10 +13,10 @@ export default function ContactoPage() {
 
       <section style={{ marginTop: "40px", lineHeight: "1.6" }}>
         <h2>📞 Datos de contacto</h2>
-        <p><strong>Teléfono:</strong> +54 9 11 0000-0000</p>
+        <p><strong>Teléfono:</strong> +54 9 11 6998-8414</p>
         <p><strong>Email:</strong> contacto@estudiotekton.com</p>
         <p><strong>Horario:</strong> Lunes a Viernes de 9:00 a 17:00 hs</p>
-        <p><strong>Zona:</strong> San Isidro, Martínez, Boulogne, Vicente López y alrededores</p>
+        <p><strong>Zona:</strong> San Isidro, y alrededores</p>
       </section>
 
       <section style={{ marginTop: "40px" }}>
