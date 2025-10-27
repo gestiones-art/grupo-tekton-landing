@@ -1,6 +1,18 @@
 export const metadata = {
   title: "Contacto | Estudio Tekton",
-  description: "Contactanos para consultas sobre trámites municipales, permisos de obra, regularización y asesoramiento técnico. Estudio Tekton - San Isidro, Martínez y zona norte.",
+  description:
+    "Contactanos para consultas sobre trámites municipales, permisos de obra, regularización y asesoramiento técnico. Estudio Tekton - San Isidro, Martínez y zona norte.",
+  alternates: { canonical: "https://estudiotekton.com/contacto" },
+  openGraph: {
+    title: "Contacto | Estudio Tekton",
+    description:
+      "Gestiones municipales en Zona Norte. Escribinos para permisos de obra, regularización y asesoramiento.",
+    url: "https://estudiotekton.com/contacto",
+    siteName: "Estudio Tekton",
+    type: "website",
+    locale: "es_AR",
+  },
+  robots: { index: true, follow: true },
 };
 
 export default function ContactoPage() {
@@ -14,8 +26,7 @@ export default function ContactoPage() {
       <section style={{ marginTop: "40px", lineHeight: "1.6" }}>
         <h2>📞 Datos de contacto</h2>
         <p><strong>Teléfono:</strong> +54 9 11 6998-8414</p>
-        <p><strong>Email:</strong> gestiones@estudiotekton.com
-</p>
+        <p><strong>Email:</strong> gestiones@estudiotekton.com</p>
         <p><strong>Horario:</strong> Lunes a Viernes de 9:00 a 17:00 hs</p>
         <p><strong>Zona:</strong> San Isidro, y alrededores</p>
       </section>
@@ -23,7 +34,7 @@ export default function ContactoPage() {
       <section style={{ marginTop: "40px" }}>
         <h2>📬 Formulario de contacto</h2>
         <form
-          action="https://formspree.io/f/tu-codigo"  // reemplazá con tu link de Formspree o Google Form
+          action="https://formspree.io/f/tu-codigo"
           method="POST"
           style={{ display: "flex", flexDirection: "column", gap: "10px", marginTop: "20px" }}
         >
