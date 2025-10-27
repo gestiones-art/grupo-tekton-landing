@@ -3,11 +3,22 @@ import Link from "next/link";
 
 // 🔹 SEO para la Home
 export const metadata = {
-  title:
-    "Gestoría de Permisos de Construcción en San Isidro y Zona Norte | Grupo Tékton",
+  title: "Gestoría Municipal y Permisos de Construcción | Estudio Tekton",
   description:
-    "Gestión municipal de permisos de construcción, regularización y conforme a obra. Trámites ante San Isidro, Martínez, Boulogne y zona norte. Planos, visados y seguimiento completo.",
+    "Gestión de permisos de construcción, regularización y conforme a obra en San Isidro, Martínez, Boulogne y zona norte. Grupo Tekton – Gestoría Municipal profesional.",
+  alternates: { canonical: "https://estudiotekton.com/" },
+  openGraph: {
+    title: "Estudio Tekton | Gestoría Municipal Zona Norte",
+    description:
+      "Gestoría municipal especializada en permisos, planos y regularización de obras en San Isidro y alrededores.",
+    url: "https://estudiotekton.com/",
+    siteName: "Estudio Tekton",
+    type: "website",
+    locale: "es_AR",
+  },
+  robots: { index: true, follow: true },
 };
+
 
 export default function HomePage() {
   return (
