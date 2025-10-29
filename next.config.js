@@ -1,1 +1,5 @@
-module.exports = { reactStrictMode: true };
+const nextConfig = {
+  trailingSlash: false,
+};
+
+module.exports = nextConfig;
