@@ -19,6 +19,13 @@ export default function Page() {
 
   return (
 <main className="min-h-screen bg-gray-100 text-gray-900 body-grid-bg">
+<section className="w-full flex justify-center py-10">
+  <img
+    src="/images/hero-illustration.svg"
+    alt="Gestión municipal Tekton"
+    className="w-full max-w-3xl rounded-2xl shadow-md"
+  />
+</section>
 
 {/* Imagen principal Tekton */}
 <section
