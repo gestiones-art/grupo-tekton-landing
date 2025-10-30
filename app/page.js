@@ -29,17 +29,18 @@ export default function Page() {
     padding: "40px 0"
   }}
 >
-  <img
-    src="/images/homepage-tekton.png"
-    alt="Grupo Tekton - Gestiones Municipales"
-    style={{
-      maxWidth: "900px",
-      width: "90%",
-      borderRadius: "16px",
-      boxShadow: "0 4px 20px rgba(0,0,0,0.1)"
-    }}
-  />
-</section>
+<img
+  src="/images/hero-illustration.svg"
+  alt="Grupo Tekton - Gestiones Municipales"
+  style={{
+    maxWidth: "1000px",
+    width: "92%",
+    borderRadius: "20px",
+    boxShadow: "0 10px 24px rgba(28,45,64,0.06)"
+  }}
+  className="hero-box"
+/>
+
 
       {/* HERO */}
       <section className="mx-auto max-w-7xl px-6 md:px-8 py-10 md:py-16">
