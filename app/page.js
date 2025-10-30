@@ -47,6 +47,7 @@ export default function Page() {
   }}
   className="hero-box"
 />
+</section>
 
 
       {/* HERO */}
