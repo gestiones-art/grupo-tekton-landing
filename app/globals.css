@@ -19,3 +19,28 @@ body {
   /* Gracias: oculto por defecto, visible al entrar con #gracias */
 #gracias { display: none; }
 #gracias:target { display: block; }
+/* Fondo general con patrón sutil */
+:root {
+  --grid-pattern: url("/images/pattern-grid.svg");
+}
+.body-grid-bg {
+  background-image: var(--grid-pattern);
+  background-size: 28px 28px;
+  background-attachment: fixed;
+}
+
+/* Contenedor hero con borde y sombra suave */
+.hero-box {
+  border: 1px solid #eceff1;
+  border-radius: 20px;
+  box-shadow: 0 10px 24px rgba(28, 45, 64, 0.06);
+  background: white;
+}
+
+/* Tarjetas con deco muy sutil */
+.card-soft {
+  background-image: url("/images/cards-deco.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
