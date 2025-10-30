@@ -19,6 +19,26 @@ export default function Page() {
 
   return (
  <main className="min-h-screen bg-gray-100 text-gray-900">
+{/* Imagen principal Tekton */}
+<section
+  style={{
+    width: "100%",
+    textAlign: "center",
+    backgroundColor: "#f9f9f9",
+    padding: "40px 0"
+  }}
+>
+  <img
+    src="/images/homepage-tekton.png"
+    alt="Grupo Tekton - Gestiones Municipales"
+    style={{
+      maxWidth: "900px",
+      width: "90%",
+      borderRadius: "16px",
+      boxShadow: "0 4px 20px rgba(0,0,0,0.1)"
+    }}
+  />
+</section>
 
       {/* HERO */}
       <section className="mx-auto max-w-7xl px-6 md:px-8 py-10 md:py-16">
