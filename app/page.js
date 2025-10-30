@@ -18,7 +18,8 @@ export default function Page() {
   const waHref = `https://wa.me/${WHATSAPP}?text=${waText}`;
 
   return (
- <main className="min-h-screen bg-gray-100 text-gray-900">
+<main className="min-h-screen bg-gray-100 text-gray-900 body-grid-bg">
+
 {/* Imagen principal Tekton */}
 <section
   style={{
