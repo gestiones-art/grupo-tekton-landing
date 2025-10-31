@@ -80,95 +80,58 @@ export default function Page() {
             </p>
           </div>
 
-          {/* Tarjetas (servicios) */}
-          <div className="grid gap-4" id="servicios">
-            {/* Fila 1 */}
-            <div className="grid sm:grid-cols-2 gap-4">
-            <a href="/tramites/regularizacion" className="rounded-2xl border border-gray-200 bg-white p-5 shadow-sm hover:bg-gray-50 hover:shadow-md transition block"
+        {/* Tarjetas (servicios) */}
+<div className="grid gap-4" id="servicios">
+  {/* Fila 1 */}
+  <div className="grid sm:grid-cols-2 gap-4">
+    <a href="/tramites/regularizacion" className="rounded-2xl border border-gray-200 bg-white p-5 shadow-sm hover:shadow-md transition block">
+      <h3 className="font-semibold text-lg">Regularización de planos</h3>
+      <p className="mt-1 text-sm text-gray-600">Obras existentes sin permiso o con diferencias.</p>
+    </a>
 
+    <a href="/tramites/demolicion" className="rounded-2xl border border-gray-200 bg-white p-5 shadow-sm hover:shadow-md transition block">
+      <h3 className="font-semibold text-lg">Permiso demolición total</h3>
+      <p className="mt-1 text-sm text-gray-600">Planificación + impacto + seguridad</p>
+    </a>
+  </div>
 
-                <h3 className="font-semibold text-lg">Regularización de planos</h3>
-                <p className="mt-1 text-sm text-gray-600">
-                  Obras existentes sin permiso o con diferencias.
-                </p>
-              </a>
+  {/* Fila 2 */}
+  <div className="grid sm:grid-cols-2 gap-4">
+    <a href="/tramites/construccion" className="rounded-2xl border border-gray-200 bg-white p-5 shadow-sm hover:shadow-md transition block">
+      <h3 className="font-semibold text-lg">Permiso de construcción</h3>
+      <p className="mt-1 text-sm text-gray-600">Prefactibilidad FOT/FOS + cómputos</p>
+    </a>
 
-              <a
-                href="/tramites/demolicion"
-         className="rounded-2xl border border-gray-200 bg-white p-5 shadow-sm hover:bg-gray-50 hover:shadow-md transition block"
+    <a href="/tramites/conforme-obra" className="rounded-2xl border border-gray-200 bg-white p-5 shadow-sm hover:shadow-md transition block">
+      <h3 className="font-semibold text-lg">Conforme a obra</h3>
+      <p className="mt-1 text-sm text-gray-600">Levantamientos + visado + archivo</p>
+    </a>
+  </div>
 
-                <h3 className="font-semibold text-lg">Permiso demolición total</h3>
-                <p className="mt-1 text-sm text-gray-600">
-                  Planificación + impacto + seguridad
-                </p>
-              </a>
-            </div>
+  {/* Fila 3 */}
+  <div className="grid sm:grid-cols-2 gap-4">
+    <a href="/tramites/electromecanica-ascensor" className="rounded-2xl border border-gray-200 bg-white p-5 shadow-sm hover:shadow-md transition block">
+      <h3 className="font-semibold text-lg">Electromecánica / Ascensor</h3>
+      <p className="mt-1 text-sm text-gray-600">Memorias + expedientes específicos</p>
+    </a>
 
-            {/* Fila 2 */}
-            <div className="grid sm:grid-cols-2 gap-4">
-              <a
-                href="/tramites/construccion"
-               className="rounded-2xl border bg-white p-5 hover:bg-gray-50 transition block">
-                 
-                <h3 className="font-semibold text-lg">Permiso de construcción</h3>
-                <p className="mt-1 text-sm text-gray-600">
-                  Prefactibilidad FOT/FOS + cómputos
-                </p>
-              </a>
+    <a href="/tramites/subdivision-ph" className="rounded-2xl border border-gray-200 bg-white p-5 shadow-sm hover:shadow-md transition block">
+      <h3 className="font-semibold text-lg">Subdivisión / PH</h3>
+      <p className="mt-1 text-sm text-gray-600">Geodesia + catastro + escrituras</p>
+    </a>
+  </div>
 
-              <a
-                href="/tramites/conforme-obra"
-               className="rounded-2xl border bg-white p-5 hover:bg-gray-50 transition block">
-                 
-                <h3 className="font-semibold text-lg">Conforme a obra</h3>
-                <p className="mt-1 text-sm text-gray-600">
-                  Levantamientos + visado + archivo
-                </p>
-              </a>
-            </div>
+  {/* Fila 4 */}
+  <div className="grid sm:grid-cols-2 gap-4">
+    <a href="/tramites/impacto-ambiental" className="rounded-2xl border border-gray-200 bg-white p-5 shadow-sm hover:shadow-md transition block">
+      <h3 className="font-semibold text-lg">Impacto ambiental</h3>
+      <p className="mt-1 text-sm text-gray-600">Gestión integral y seguimiento</p>
+    </a>
+  </div>
 
-            {/* Fila 3 */}
-            <div className="grid sm:grid-cols-2 gap-4">
-              <a
-                href="/tramites/electromecanica-ascensor"
-              className="rounded-2xl border bg-white p-5 hover:bg-gray-50 transition block">
-                
-                <h3 className="font-semibold text-lg">Electromecánica / Ascensor</h3>
-                <p className="mt-1 text-sm text-gray-600">
-                  Memorias + expedientes específicos
-                </p>
-              </a>
+  <p className="text-xs text-gray-500">+ FOT/FOS, prefactibilidad, informes técnicos y más.</p>
+</div>
 
-              <a
-                href="/tramites/subdivision-ph"
-               className="rounded-2xl border bg-white p-5 hover:bg-gray-50 transition block">
-                 
-                <h3 className="font-semibold text-lg">Subdivisión / PH</h3>
-                <p className="mt-1 text-sm text-gray-600">
-                  Geodesia + catastro + escrituras
-                </p>
-              </a>
-            </div>
-
-            {/* Fila 4 */}
-            <div className="grid sm:grid-cols-2 gap-4">
-              <a
-                href="/tramites/impacto-ambiental"
-              className="rounded-2xl border bg-white p-5 hover:bg-gray-50 transition block">
-                
-                <h3 className="font-semibold text-lg">Impacto ambiental</h3>
-                <p className="mt-1 text-sm text-gray-600">
-                  Gestión integral y seguimiento
-                </p>
-              </a>
-            </div>
-
-            <p className="text-xs text-gray-500">
-              + FOT/FOS, prefactibilidad, informes técnicos y más.
-            </p>
-          </div>
-        </div>
-      </section>
 
       {/* CONTACTO */}
       <section id="contacto" className="py-8 px-6 md:px-8 mx-auto max-w-4xl">
