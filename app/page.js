@@ -18,36 +18,10 @@ export default function Page() {
   const waHref = `https://wa.me/${WHATSAPP}?text=${waText}`;
 
   return (
-<main className="min-h-screen bg-gray-100 text-gray-900 body-grid-bg">
-<section className="w-full flex justify-center py-10">
-  <img
-    src="/images/hero-illustration.svg"
-    alt="Gestión municipal Tekton"
-    className="w-full max-w-3xl rounded-2xl shadow-md"
-  />
-</section>
+<main className="min-h-screen bg-white text-gray-900">
 
-{/* Imagen principal Tekton */}
-<section
-  style={{
-    width: "100%",
-    textAlign: "center",
-    backgroundColor: "#f9f9f9",
-    padding: "40px 0"
-  }}
->
-<img
-  src="/images/hero-illustration.svg"
-  alt="Grupo Tekton - Gestiones Municipales"
-  style={{
-    maxWidth: "1000px",
-    width: "92%",
-    borderRadius: "20px",
-    boxShadow: "0 10px 24px rgba(28,45,64,0.06)"
-  }}
-  className="hero-box"
-/>
-</section>
+
+
 
 
       {/* HERO */}
