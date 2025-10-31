@@ -84,7 +84,8 @@ export default function Page() {
           <div className="grid gap-4" id="servicios">
             {/* Fila 1 */}
             <div className="grid sm:grid-cols-2 gap-4">
-            <a href="/tramites/regularizacion" className="rounded-2xl border bg-white p-5 hover:bg-gray-50 transition block">
+            <a href="/tramites/regularizacion" className="rounded-2xl border border-gray-200 bg-white p-5 shadow-sm hover:bg-gray-50 hover:shadow-md transition block"
+
 
                 <h3 className="font-semibold text-lg">Regularización de planos</h3>
                 <p className="mt-1 text-sm text-gray-600">
@@ -94,7 +95,8 @@ export default function Page() {
 
               <a
                 href="/tramites/demolicion"
-                className="rounded-2xl border bg-white p-5 hover:bg-gray-50 transition block">
+         className="rounded-2xl border border-gray-200 bg-white p-5 shadow-sm hover:bg-gray-50 hover:shadow-md transition block"
+
                 <h3 className="font-semibold text-lg">Permiso demolición total</h3>
                 <p className="mt-1 text-sm text-gray-600">
                   Planificación + impacto + seguridad
