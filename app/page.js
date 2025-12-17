@@ -8,7 +8,7 @@ import PhoneField from "./components/PhoneField";
 export const metadata = {
   title: "Grupo Tékton — Gestión Municipal",
   description:
-    "Gestiones municipales de Obras. Mejora de procesos para minimizar observaciones y optimizar tiempos, con estricto cumplimiento normativo.",
+    "Asesoría Integral de Obra & Proyectos + Gestión Municipal En Estudio Tekton acompañamos a nuestros clientes en todas las etapas de su obra, desde el análisis inicial del proyecto hasta la gestión completa de permisos y trámites municipales en toda la Zona Norte. Nuestra experiencia técnica incluye: ✔ Asesoría de obra y dirección técnica, garantizando calidad y cumplimiento normativo. ✔ Desarrollo de proyectos arquitectónicos y estructurales, con soluciones a medida para cada necesidad. ✔ Análisis de prefactibilidad (FOT/FOS, restricciones urbanísticas y de impacto). ✔ Interpretación y aplicación del Código de Ordenamiento Urbano de todos los municipios de Zona Norte, asegurando que tu proyecto cumpla con todas las normas vigentes. ✔ Gestión integral de trámites municipales, incluyendo permisos de construcción, subdivisiones, regularizaciones, conforme a obra y más. Trabajamos con un enfoque técnico y estratégico para optimizar tiempos administrativos y minimizar observaciones, velando por un proceso ágil y transparente desde el inicio hasta la finalización de tu proyecto",
 };
 
 export default function Page() {
