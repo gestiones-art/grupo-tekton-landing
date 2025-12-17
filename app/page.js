@@ -22,7 +22,7 @@ export default function Page() {
 
       {/* HERO */}
       <section className="mx-auto max-w-7xl px-6 md:px-8 py-10 md:py-16">
-        <div className="grid md:grid-cols-2 gap-10 items-start">
+      <div className="grid gap-10 items-start">
           <div>
             {/* Lockup: logo + nombre (sin badge) */}
             <div className="mt-2 flex items-center gap-3">
