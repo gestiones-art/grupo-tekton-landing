@@ -106,14 +106,8 @@ export default function Page() {
                 </svg>
                 WhatsApp
               </a>
-            </div>
 
-            <p className="mt-8 text-sm text-gray-600">
-              San Isidro · Vicente López · San Fernando · Tigre · San Martín
-            </p>
-          </div>
-
-          {/* Tarjetas (servicios) */}
+                {/* Tarjetas (servicios) */}
           <div className="grid gap-4" id="servicios">
             <div className="grid sm:grid-cols-2 gap-4">
               <a
@@ -198,6 +192,15 @@ export default function Page() {
             </p>
           </div>
         </div>
+                 
+            </div>
+
+            <p className="mt-8 text-sm text-gray-600">
+              San Isidro · Vicente López · San Fernando · Tigre · San Martín
+            </p>
+          </div>
+
+      
       </section>
 
       {/* CONTACTO */}
