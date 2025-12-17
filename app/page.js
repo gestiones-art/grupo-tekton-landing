@@ -29,7 +29,7 @@ export default function Page() {
           }}
           className="hero-box"
         />
-      </section>
+   
 
       {/* HERO */}
       <section className="mx-auto max-w-7xl px-6 md:px-8 py-10 md:py-16">
