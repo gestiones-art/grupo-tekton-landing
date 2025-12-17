@@ -18,18 +18,7 @@ export default function Page() {
   return (
     <main className="min-h-screen bg-gray-100 text-gray-900 body-grid-bg">
     
-        <img
-          src="/images/hero-illustration.svg"
-          alt="Grupo Tekton - Gestiones Municipales"
-          style={{
-            maxWidth: "1000px",
-            width: "92%",
-            borderRadius: "20px",
-            boxShadow: "0 10px 24px rgba(28,45,64,0.06)",
-          }}
-          className="hero-box"
-        />
-   
+    
 
       {/* HERO */}
       <section className="mx-auto max-w-7xl px-6 md:px-8 py-10 md:py-16">
