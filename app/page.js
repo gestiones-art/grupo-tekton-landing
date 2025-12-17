@@ -17,15 +17,7 @@ export default function Page() {
 
   return (
     <main className="min-h-screen bg-gray-100 text-gray-900 body-grid-bg">
-      {/* Imagen principal Tekton */}
-      <section
-        style={{
-          width: "100%",
-          textAlign: "center",
-          backgroundColor: "#f9f9f9",
-          padding: "40px 0",
-        }}
-      >
+    
         <img
           src="/images/hero-illustration.svg"
           alt="Grupo Tekton - Gestiones Municipales"
