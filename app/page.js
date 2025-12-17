@@ -16,7 +16,7 @@ export default function Page() {
   const waHref = `https://wa.me/${WHATSAPP}?text=${waText}`;
 
   return (
-    <main className="min-h-screen bg-gray-100 text-gray-900 body-grid-bg">
+    <main className="min-h-screen bg-gray-100 text-gray-900 ">
     
     
 
