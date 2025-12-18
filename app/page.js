@@ -107,7 +107,7 @@ export default function Page() {
                 </svg>
                 WhatsApp
               </a>
-
+</div>
                 {/* Tarjetas (servicios) */}
           <div className="grid gap-4" id="servicios">
             <div className="grid sm:grid-cols-2 gap-4">
@@ -201,7 +201,7 @@ export default function Page() {
             </p>
           </div>
 
-      
+       </div>
       </section>
 
       {/* CONTACTO */}
