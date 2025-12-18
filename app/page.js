@@ -107,7 +107,6 @@ export default function Page() {
                 </svg>
                 WhatsApp
               </a>
-            </div>
 
                 {/* Tarjetas (servicios) */}
           <div className="grid gap-4" id="servicios">
