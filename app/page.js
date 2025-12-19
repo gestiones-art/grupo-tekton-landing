@@ -203,6 +203,25 @@ export default function Page() {
 
        </div>
       </section>
+<div className="mt-8">
+  <a
+    href={waHref}
+    target="_blank"
+    rel="noopener noreferrer"
+    className="inline-flex items-center justify-center gap-2 rounded-xl bg-[#25D366] text-white px-5 py-3 font-medium hover:opacity-90 w-fit"
+    aria-label="Abrir WhatsApp"
+  >
+    WhatsApp
+  </a>
+</div>
+
+<p className="mt-8 text-sm text-gray-600">
+  San Isidro · Vicente López · San Fernando · Tigre · San Martín
+</p>
+
+</div>
+</div>
+</section>
 
       {/* CONTACTO */}
       <section id="contacto" className="py-8 px-6 md:px-8 mx-auto max-w-4xl">
