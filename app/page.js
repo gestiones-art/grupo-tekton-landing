@@ -4,9 +4,9 @@ import PhoneField from "./components/PhoneField";
 const WHATSAPP = "5491169988414";
 
 export const metadata = {
-  title: "Grupo Tékton — Gestión Municipal",
+  title: "Estudio Tekton — Gestión Municipal",
   description:
-    "Asesoría Integral de Obra & Proyectos + Gestión Municipal. En Estudio Tekton acompañamos a nuestros clientes en todas las etapas de su obra, desde el análisis inicial del proyecto hasta la gestión completa de permisos y trámites municipales en toda la Zona Norte.",
+    "Asesoría Integral de Obra & Proyectos + Gestión Municipal. Acompañamos todas las etapas de obra y gestionamos permisos y trámites municipales en Zona Norte.",
 };
 
 export default function Page() {
@@ -16,15 +16,12 @@ export default function Page() {
   const waHref = `https://wa.me/${WHATSAPP}?text=${waText}`;
 
   return (
-    <main className="min-h-screen bg-gray-100 text-gray-900 ">
-    
-    
-
-      {/* HERO */}
+    <main className="min-h-screen bg-gray-100 text-gray-900">
+      {/* HERO (1 columna) */}
       <section className="mx-auto max-w-7xl px-6 md:px-8 py-10 md:py-16">
-      <div className="grid gap-10 items-start">
+        <div className="grid gap-10 items-start">
           <div>
-            {/* Lockup: logo + nombre (sin badge) */}
+            {/* Lockup: logo + nombre */}
             <div className="mt-2 flex items-center gap-3">
               <img
                 src="/logo-tekton-squad.svg"
@@ -36,18 +33,13 @@ export default function Page() {
               </span>
             </div>
 
+            {/* Título */}
             <h1 className="mt-4 text-2xl md:text-4xl font-bold leading-snug text-gray-900">
-             Asesoría Integral de Obra & Proyectos + Gestión Municipal
-
-
+              Asesoría Integral de Obra &amp; Proyectos + Gestión Municipal
             </h1>
 
-            {/* TEXTO NUEVO (el que querías que aparezca acá) */}
-            <div className="mt-6 max-w-2xl text-lg text-gray-700">
-              <p className="font-semibold text-gray-900">
-                
-              </p>
-
+            {/* Texto */}
+            <div className="mt-6 max-w-3xl text-lg text-gray-700">
               <p className="mt-3">
                 En Estudio Tekton acompañamos a nuestros clientes en todas las etapas de
                 su obra, desde el análisis inicial del proyecto hasta la gestión completa
@@ -87,13 +79,13 @@ export default function Page() {
               </p>
             </div>
 
-            <div className="mt-8 flex flex-col sm:flex-row gap-3">
+            {/* WhatsApp (NO se estira) */}
+            <div className="mt-8">
               <a
                 href={waHref}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center justify-center gap-2 rounded-xl bg-[#25D366] text-white px-5 py-3 font-medium hover:opacity-90 w-fit
-"
+                className="inline-flex items-center justify-center gap-2 rounded-xl bg-[#25D366] text-white px-5 py-3 font-medium hover:opacity-90 w-fit"
                 aria-label="Abrir WhatsApp"
               >
                 <svg
@@ -107,121 +99,101 @@ export default function Page() {
                 </svg>
                 WhatsApp
               </a>
-</div>
-                {/* Tarjetas (servicios) */}
-          <div className="grid gap-4" id="servicios">
-            <div className="grid sm:grid-cols-2 gap-4">
-              <a
-                href="/tramites/regularizacion"
-                className="rounded-2xl border bg-white p-5 hover:bg-gray-50 transition block"
-              >
-                <h3 className="font-semibold text-lg">Regularización de planos</h3>
-                <p className="mt-1 text-sm text-gray-600">
-                  Obras existentes sin permiso o con diferencias.
-                </p>
-              </a>
-
-              <a
-                href="/tramites/demolicion"
-                className="rounded-2xl border bg-white p-5 hover:bg-gray-50 transition block"
-              >
-                <h3 className="font-semibold text-lg">Permiso demolición total</h3>
-                <p className="mt-1 text-sm text-gray-600">
-                  Planificación + impacto + seguridad
-                </p>
-              </a>
-            </div>
-
-            <div className="grid sm:grid-cols-2 gap-4">
-              <a
-                href="/tramites/construccion"
-                className="rounded-2xl border bg-white p-5 hover:bg-gray-50 transition block"
-              >
-                <h3 className="font-semibold text-lg">Permiso de construcción</h3>
-                <p className="mt-1 text-sm text-gray-600">
-                  Prefactibilidad FOT/FOS + cómputos
-                </p>
-              </a>
-
-              <a
-                href="/tramites/conforme-obra"
-                className="rounded-2xl border bg-white p-5 hover:bg-gray-50 transition block"
-              >
-                <h3 className="font-semibold text-lg">Conforme a obra</h3>
-                <p className="mt-1 text-sm text-gray-600">
-                  Levantamientos + visado + archivo
-                </p>
-              </a>
-            </div>
-
-            <div className="grid sm:grid-cols-2 gap-4">
-              <a
-                href="/tramites/electromecanica-ascensor"
-                className="rounded-2xl border bg-white p-5 hover:bg-gray-50 transition block"
-              >
-                <h3 className="font-semibold text-lg">Electromecánica / Ascensor</h3>
-                <p className="mt-1 text-sm text-gray-600">
-                  Memorias + expedientes específicos
-                </p>
-              </a>
-
-              <a
-                href="/tramites/subdivision-ph"
-                className="rounded-2xl border bg-white p-5 hover:bg-gray-50 transition block"
-              >
-                <h3 className="font-semibold text-lg">Subdivisión / PH</h3>
-                <p className="mt-1 text-sm text-gray-600">
-                  Geodesia + catastro + escrituras
-                </p>
-              </a>
-            </div>
-
-            <div className="grid sm:grid-cols-2 gap-4">
-              <a
-                href="/tramites/impacto-ambiental"
-                className="rounded-2xl border bg-white p-5 hover:bg-gray-50 transition block"
-              >
-                <h3 className="font-semibold text-lg">Impacto ambiental</h3>
-                <p className="mt-1 text-sm text-gray-600">
-                  Gestión integral y seguimiento
-                </p>
-              </a>
-            </div>
-
-            <p className="text-xs text-gray-500">
-              + FOT/FOS, prefactibilidad, informes técnicos y más.
-            </p>
-          </div>
-        </div>
-                 
             </div>
 
             <p className="mt-8 text-sm text-gray-600">
               San Isidro · Vicente López · San Fernando · Tigre · San Martín
             </p>
           </div>
-
-       </div>
+        </div>
       </section>
-<div className="mt-8">
-  <a
-    href={waHref}
-    target="_blank"
-    rel="noopener noreferrer"
-    className="inline-flex items-center justify-center gap-2 rounded-xl bg-[#25D366] text-white px-5 py-3 font-medium hover:opacity-90 w-fit"
-    aria-label="Abrir WhatsApp"
-  >
-    WhatsApp
-  </a>
-</div>
 
-<p className="mt-8 text-sm text-gray-600">
-  San Isidro · Vicente López · San Fernando · Tigre · San Martín
-</p>
+      {/* SERVICIOS (cards abajo del hero) */}
+      <section className="mx-auto max-w-7xl px-6 md:px-8 pb-10 md:pb-14" id="servicios">
+        <div className="grid gap-4">
+          <div className="grid sm:grid-cols-2 gap-4">
+            <a
+              href="/tramites/regularizacion"
+              className="rounded-2xl border bg-white p-5 hover:bg-gray-50 transition block"
+            >
+              <h3 className="font-semibold text-lg">Regularización de planos</h3>
+              <p className="mt-1 text-sm text-gray-600">
+                Obras existentes sin permiso o con diferencias.
+              </p>
+            </a>
 
-</div>
-</div>
-</section>
+            <a
+              href="/tramites/demolicion"
+              className="rounded-2xl border bg-white p-5 hover:bg-gray-50 transition block"
+            >
+              <h3 className="font-semibold text-lg">Permiso demolición total</h3>
+              <p className="mt-1 text-sm text-gray-600">
+                Planificación + impacto + seguridad
+              </p>
+            </a>
+          </div>
+
+          <div className="grid sm:grid-cols-2 gap-4">
+            <a
+              href="/tramites/construccion"
+              className="rounded-2xl border bg-white p-5 hover:bg-gray-50 transition block"
+            >
+              <h3 className="font-semibold text-lg">Permiso de construcción</h3>
+              <p className="mt-1 text-sm text-gray-600">
+                Prefactibilidad FOT/FOS + cómputos
+              </p>
+            </a>
+
+            <a
+              href="/tramites/conforme-obra"
+              className="rounded-2xl border bg-white p-5 hover:bg-gray-50 transition block"
+            >
+              <h3 className="font-semibold text-lg">Conforme a obra</h3>
+              <p className="mt-1 text-sm text-gray-600">
+                Levantamientos + visado + archivo
+              </p>
+            </a>
+          </div>
+
+          <div className="grid sm:grid-cols-2 gap-4">
+            <a
+              href="/tramites/electromecanica-ascensor"
+              className="rounded-2xl border bg-white p-5 hover:bg-gray-50 transition block"
+            >
+              <h3 className="font-semibold text-lg">Electromecánica / Ascensor</h3>
+              <p className="mt-1 text-sm text-gray-600">
+                Memorias + expedientes específicos
+              </p>
+            </a>
+
+            <a
+              href="/tramites/subdivision-ph"
+              className="rounded-2xl border bg-white p-5 hover:bg-gray-50 transition block"
+            >
+              <h3 className="font-semibold text-lg">Subdivisión / PH</h3>
+              <p className="mt-1 text-sm text-gray-600">
+                Geodesia + catastro + escrituras
+              </p>
+            </a>
+          </div>
+
+          <div className="grid sm:grid-cols-2 gap-4">
+            <a
+              href="/tramites/impacto-ambiental"
+              className="rounded-2xl border bg-white p-5 hover:bg-gray-50 transition block"
+            >
+              <h3 className="font-semibold text-lg">Impacto ambiental</h3>
+              <p className="mt-1 text-sm text-gray-600">
+                Gestión integral y seguimiento
+              </p>
+            </a>
+          </div>
+
+          <p className="text-xs text-gray-500">
+            + FOT/FOS, prefactibilidad, informes técnicos y más.
+          </p>
+        </div>
+      </section>
 
       {/* CONTACTO */}
       <section id="contacto" className="py-8 px-6 md:px-8 mx-auto max-w-4xl">
@@ -312,6 +284,7 @@ export default function Page() {
         </form>
       </section>
 
+      {/* Cartel de Gracias */}
       <div
         id="gracias"
         className="fixed inset-x-0 top-4 mx-auto w-fit rounded-md bg-emerald-600 text-white px-4 py-2 shadow-lg"
