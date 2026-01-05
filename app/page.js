@@ -23,6 +23,19 @@ export const metadata = {
 export default function HomePage() {
   return (
     <main className="min-h-screen bg-gray-100 text-gray-900">
+
+
+    <h1 className="text-3xl md:text-4xl font-bold mb-4">
+  Asesoría Integral de Obra y Gestión Municipal
+</h1>
+
+<p className="text-lg mb-6">
+  Acompañamos a arquitectos y propietarios en la gestión de permisos,
+  trámites municipales y proyectos de obra en Zona Norte
+  (San Isidro, Vicente López, San Fernando, Tigre y alrededores).
+</p>
+
+  
       {/* HERO */}
       <section className="bg-[#0b132b] text-white text-center py-20">
         <h1 className="text-4xl font-bold mb-3">
